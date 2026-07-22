@@ -21,6 +21,8 @@
     "hint": "Particle Therapy Co-Operative Group annual conference — ptcog.online 'Future PTCOG Conferences' page." },
   { "soc": "PTCOG-AO", "group": "INTL",
     "hint": "PTCOG Asia-Oceania regional meeting." },
+  { "soc": "AOCMP", "group": "INTL",
+    "hint": "Asia-Oceania Congress on Medical Physics(AOCMP) — https://afomp.org/aocmp-conferences/" },
   { "soc": "ICCR", "group": "INTL",
     "hint": "International Conference on the use of Computers in Radiation Therapy (triennial; last: 20th, Lyon, July 2024)." },
   { "soc": "MICCAI", "group": "INTL",
