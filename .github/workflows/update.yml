@@ -1,0 +1,37 @@
+name: Weekly conference update
+
+on:
+  schedule:
+    # 매주 월요일 14:00 UTC = 한국시간 월요일 밤 11시(23:00)
+    - cron: "0 14 * * 1"
+  workflow_dispatch: {}   # Actions 탭에서 수동 실행 버튼도 제공
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run update script (Claude + web search)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/update.mjs
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name "conference-bot"
+          git config user.email "actions@github.com"
+          git add data.json
+          if git diff --cached --quiet; then
+            echo "No changes today."
+          else
+            git commit -m "chore: weekly conference data update ($(date -u +%F))"
+            git push
+          fi
