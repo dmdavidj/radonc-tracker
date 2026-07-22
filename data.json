@@ -1,7 +1,11 @@
 {
  "meta": {
-  "lastUpdated": "2026-07-22T00:00:00+09:00",
-  "note": "baseline verified manually"
+  "lastUpdated": "2026-07-22T02:43:41.458Z",
+  "note": "baseline verified manually",
+  "lastRun": {
+   "changed": 1,
+   "failedGroups": 0
+  }
  },
  "meetings": [
   {
@@ -746,6 +750,34 @@
     "ko": "미정",
     "en": "TBD"
    }
+  },
+  {
+   "soc": "AOCMP",
+   "name": {
+    "ko": "제26회 아시아-오세아니아 의료물리학회의",
+    "en": "26th Asia-Oceania Congress of Medical Physics"
+   },
+   "start": "2026-09-09",
+   "end": "2026-09-11",
+   "status": "confirmed",
+   "city": {
+    "ko": "부산",
+    "en": "Busan"
+   },
+   "country": {
+    "ko": "대한민국",
+    "en": "Republic of Korea"
+   },
+   "venue": {
+    "ko": "부산항만국제전시컨벤션센터(BPEX)",
+    "en": "Busan Port International Exhibition & Convention Center (BPEX)"
+   },
+   "note": {
+    "ko": "신규 등록",
+    "en": "Newly registered"
+   },
+   "url": "https://www.aocmp2026.org",
+   "group": "INTL"
   }
  ]
 }
