@@ -1,0 +1,31 @@
+{
+ "_설명": "학회 등록부. 여기에 학회를 한 줄 추가하면 다음 자동 실행 때 Claude가 웹을 검색해 일정을 찾아 data.json에 자동으로 채워 넣습니다. soc=약칭(카드에 표시), group=색상 분류(KR 국내/NA 북미/EU 유럽/JP 일본/INTL 국제), hint=검색 힌트(공식 홈페이지·검색 언어 등, 자세할수록 정확).",
+ "societies": [
+  { "soc": "KOSRO", "group": "KR",
+    "hint": "대한방사선종양학회 — kosro.or.kr의 춘계/추계 학술대회 페이지를 우선 확인. 한국어로 검색." },
+  { "soc": "KSMP", "group": "KR",
+    "hint": "한국의학물리학회 — ksmp.or.kr 학술대회 안내 확인. 한국어로 검색." },
+  { "soc": "KARP", "group": "KR",
+    "hint": "대한방사선방어학회 — karp.or.kr 학술대회 메뉴 확인. 한국어로 검색." },
+  { "soc": "ASTRO", "group": "NA",
+    "hint": "American Society for Radiation Oncology annual meeting — astro.org (check the Future Annual Meetings page too)." },
+  { "soc": "AAPM", "group": "NA",
+    "hint": "American Association of Physicists in Medicine annual meeting — aapm.org / site.aapm.org (check Future Meetings list)." },
+  { "soc": "AAMD", "group": "NA",
+    "hint": "American Association of Medical Dosimetrists — medicaldosimetry.org/meetings (check annual, future and fall/regional meetings pages)." },
+  { "soc": "ESTRO", "group": "EU",
+    "hint": "European Society for Radiotherapy and Oncology annual congress — estro.org/Congresses." },
+  { "soc": "JASTRO", "group": "JP",
+    "hint": "日本放射線腫瘍学会 学術大会 — jastro.or.jp. Search in Japanese." },
+  { "soc": "PTCOG", "group": "INTL",
+    "hint": "Particle Therapy Co-Operative Group annual conference — ptcog.online 'Future PTCOG Conferences' page." },
+  { "soc": "PTCOG-AO", "group": "INTL",
+    "hint": "PTCOG Asia-Oceania regional meeting." },
+  { "soc": "ICCR", "group": "INTL",
+    "hint": "International Conference on the use of Computers in Radiation Therapy (triennial; last: 20th, Lyon, July 2024)." },
+  { "soc": "MICCAI", "group": "INTL",
+    "hint": "Medical Image Computing and Computer Assisted Intervention conference — miccai.org 'Upcoming Conferences' page." },
+  { "soc": "MR-Linac Consortium", "group": "INTL",
+    "hint": "Elekta MR-Linac Consortium annual meeting — mrlconsortium.org/meeting-and-events." }
+ ]
+}

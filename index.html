@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RadOnc Meetings — 방사선종양학·의학물리 학회 일정</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#10202b; --ink-soft:#4a5c68; --paper:#f3f6f7; --card:#fff; --line:#dbe4e8;
+  --kr:#0e7a6f; --na:#1f5fa8; --eu:#7a4bbf; --jp:#c04a3a; --intl:#8a6d1f;
+  --tbd:#8a97a0; --beam:#e8b931;
+  --radius:14px; --mono:'IBM Plex Mono',monospace; --sans:'IBM Plex Sans KR',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.55}
+
+header{background:var(--ink);color:#eef4f6;padding:38px 24px 30px;position:relative}
+header::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+  background:linear-gradient(90deg,var(--kr) 0 20%,var(--na) 20% 40%,var(--eu) 40% 60%,var(--jp) 60% 80%,var(--intl) 80% 100%)}
+.wrap{max-width:1020px;margin:0 auto;position:relative}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.18em;color:var(--beam);text-transform:uppercase;margin-bottom:10px}
+header h1{font-size:clamp(23px,4vw,32px);font-weight:700}
+header p.sub{margin-top:8px;color:#a9bcc6;font-size:14px;max-width:700px}
+.updated{font-family:var(--mono);font-size:12px;color:#7f96a2;margin-top:12px}
+.updated b{color:var(--beam)}
+
+/* language switch */
+.langsw{position:absolute;top:0;right:0;display:flex;border:1px solid #3a4e5b;border-radius:9px;overflow:hidden}
+.langsw button{background:none;border:none;color:#8fa5b1;font-family:var(--mono);font-size:12px;
+  font-weight:600;padding:6px 12px;cursor:pointer;letter-spacing:.05em}
+.langsw button.on{background:var(--beam);color:var(--ink)}
+.langsw button:not(:last-child){border-right:1px solid #3a4e5b}
+
+.aibar{max-width:1020px;margin:-1px auto 0;padding:0 24px}
+.aibar-in{background:var(--card);border:1px solid var(--line);border-top:none;
+  border-radius:0 0 var(--radius) var(--radius);padding:13px 20px;
+  display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;font-size:13.5px}
+.btn-update{background:var(--ink);color:#fff;border:none;border-radius:9px;padding:9px 18px;
+  font-family:var(--sans);font-size:13.5px;font-weight:600;cursor:pointer;
+  display:inline-flex;align-items:center;gap:8px;transition:opacity .15s}
+.btn-update:hover{opacity:.88}
+.btn-update:disabled{opacity:.5;cursor:wait}
+.btn-update .dot{width:8px;height:8px;border-radius:50%;background:var(--beam)}
+.btn-update.running .dot{animation:pulse 1s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
+#updStatus{color:var(--ink-soft);flex:1;min-width:200px}
+#updStatus .ok{color:#0d6b56;font-weight:600}
+#updStatus .err{color:#a3352a;font-weight:600}
+.ai-note{font-size:12px;color:var(--tbd);width:100%}
+
+.controls{max-width:1020px;margin:24px auto 4px;padding:0 24px;display:flex;flex-wrap:wrap;gap:9px;align-items:center}
+.chip{border:1.5px solid var(--line);background:var(--card);color:var(--ink-soft);
+  border-radius:999px;padding:7px 15px;font-size:13px;font-weight:500;cursor:pointer;font-family:var(--sans)}
+.chip:hover{border-color:#b7c6cd}
+.chip.on{color:#fff;border-color:transparent;background:var(--ink)}
+select{border:1.5px solid var(--line);background:var(--card);border-radius:9px;padding:7px 10px;
+  font-family:var(--sans);font-size:13px;color:var(--ink)}
+.spacer{flex:1}
+.toggle-past{font-family:var(--mono);font-size:12.5px;color:var(--ink-soft);background:none;border:none;
+  cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+
+main{max-width:1020px;margin:0 auto 70px;padding:0 24px}
+.yeargroup{margin-top:32px}
+.yeargroup h2{font-family:var(--mono);font-size:15px;letter-spacing:.12em;color:var(--ink-soft);
+  display:flex;align-items:center;gap:14px}
+.yeargroup h2::after{content:"";flex:1;height:1px;background:var(--line)}
+.cards{margin-top:13px;display:grid;gap:11px}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px 20px;display:grid;gap:3px 18px;grid-template-columns:116px 1fr auto;
+  align-items:start;border-left:5px solid var(--line)}
+.card:hover{box-shadow:0 3px 14px rgba(16,32,43,.08)}
+.card[data-g="KR"]{border-left-color:var(--kr)}
+.card[data-g="NA"]{border-left-color:var(--na)}
+.card[data-g="EU"]{border-left-color:var(--eu)}
+.card[data-g="JP"]{border-left-color:var(--jp)}
+.card[data-g="INTL"]{border-left-color:var(--intl)}
+.card.past{opacity:.5;border-left-color:var(--tbd)!important}
+.card.fresh{animation:flash 1.6s ease-out}
+@keyframes flash{0%{background:#fdf6dd}100%{background:var(--card)}}
+
+.date{font-family:var(--mono);font-size:13px;line-height:1.45}
+.date .mo{font-weight:600;font-size:14.5px}
+.date .tbd{color:var(--tbd);font-weight:500}
+.body h3{font-size:16px;font-weight:600}
+.body h3 a{color:inherit;text-decoration:none;border-bottom:1.5px solid transparent}
+.body h3 a:hover{border-bottom-color:currentColor}
+.meta{font-size:13.5px;color:var(--ink-soft);margin-top:2px}
+.meta .loc{font-weight:500;color:var(--ink)}
+.note{font-size:12.5px;color:var(--ink-soft);margin-top:5px}
+.note::before{content:"※ ";color:var(--tbd)}
+.right{display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+.badge{font-family:var(--mono);font-size:10.5px;letter-spacing:.05em;font-weight:600;padding:3px 8px;border-radius:6px;white-space:nowrap}
+.badge.ok{background:#e2f2ec;color:#0d6b56}
+.badge.part{background:#fdf3d7;color:#8a6a10}
+.badge.tbd{background:#eef1f3;color:var(--tbd)}
+.badge.done{background:#eef1f3;color:var(--tbd);text-decoration:line-through}
+.ddaytag{font-family:var(--mono);font-size:12px;font-weight:600}
+.ddaytag.hot{color:#b3690a}
+.soc{font-family:var(--mono);font-size:10.5px;letter-spacing:.09em;font-weight:600;display:inline-block;margin-bottom:1px}
+.card[data-g="KR"] .soc{color:var(--kr)}
+.card[data-g="NA"] .soc{color:var(--na)}
+.card[data-g="EU"] .soc{color:var(--eu)}
+.card[data-g="JP"] .soc{color:var(--jp)}
+.card[data-g="INTL"] .soc{color:var(--intl)}
+.empty{margin-top:40px;text-align:center;color:var(--ink-soft);font-size:14px}
+footer{max-width:1020px;margin:0 auto 40px;padding:18px 24px 0;font-size:12.5px;color:var(--ink-soft);border-top:1px solid var(--line)}
+@media(max-width:660px){
+  .card{grid-template-columns:1fr;gap:7px}.right{flex-direction:row;align-items:center}
+  .langsw{position:static;margin-bottom:14px;width:max-content}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="langsw" role="group" aria-label="Language">
+      <button id="langKo" class="on">한국어</button><button id="langEn">EN</button>
+    </div>
+    <div class="eyebrow">Radiation Oncology · Medical Physics · Meeting Tracker</div>
+    <h1 data-t="title"></h1>
+    <p class="sub" data-t="sub"></p>
+    <div class="updated"><span data-t="baseline"></span> <b>2026-07-22</b> · <span id="lastAiCheck"></span></div>
+  </div>
+</header>
+
+<div class="aibar">
+  <div class="aibar-in">
+    <span style="font-family:var(--mono);font-size:12px;font-weight:600;color:#0d6b56;background:#e2f2ec;padding:3px 10px;border-radius:6px" data-t="autoTag"></span>
+    <span id="updStatus"></span>
+    <span class="ai-note" data-t="aiNote"></span>
+  </div>
+</div>
+
+<div class="controls">
+  <button class="chip on" data-f="all" data-t="fAll"></button>
+  <button class="chip" data-f="KR" data-t="fKr"></button>
+  <button class="chip" data-f="INT" data-t="fInt"></button>
+  <select id="socSel"></select>
+  <div class="spacer"></div>
+  <button class="toggle-past" id="pastBtn"></button>
+</div>
+
+<main id="list"></main>
+
+<footer data-t="footer"></footer>
+
+<script>
+/* ══════════ i18n ══════════ */
+let LANG = "ko";
+const T = {
+  title:{ko:"방사선종양학 주요 학회 일정",en:"Radiation Oncology Conference Tracker"},
+  sub:{ko:"KOSRO · KSMP · KARP · ASTRO · ESTRO · JASTRO · AAPM · AAMD · PTCOG · PTCOG-AO · ICCR · MICCAI · MR-Linac Consortium — 연례 학술대회 개최일과 장소를 공식 발표 기준으로 추적합니다.",
+       en:"KOSRO · KSMP · KARP · ASTRO · ESTRO · JASTRO · AAPM · AAMD · PTCOG · PTCOG-AO · ICCR · MICCAI · MR-Linac Consortium — tracking annual meeting dates and venues based on official announcements."},
+  baseline:{ko:"기본 데이터 확인일",en:"Baseline data verified"},
+  aiChecked:{ko:"마지막 자동 업데이트",en:"Last auto-update"},
+  autoTag:{ko:"매주 월요일 23시 자동 업데이트",en:"AUTO-UPDATED MONDAYS 23:00 KST"},
+  aiIdle:{ko:"매주 월요일 밤 11시(KST)에 등록된 모든 학회를 웹에서 검색해 이 데이터를 갱신합니다.",en:"Every Monday at 23:00 KST, all registered societies are checked via web search and this data is refreshed."},
+  aiNote:{ko:"확정 정보는 각 학회 공식 홈페이지에서 재확인하세요.",en:"Always confirm on each society’s official website."},
+  aiSearching:{ko:"검색 중…",en:"searching…"},
+  aiFail:{ko:"업데이트 실패 — 네트워크 상태를 확인하고 다시 시도해 주세요.",
+          en:"Update failed — check your connection and try again."},
+  aiDoneChanged:{ko:n=>`완료 — ${n}건의 일정이 갱신/추가되었습니다.`,en:n=>`Done — ${n} item(s) updated or added.`},
+  aiDoneNone:{ko:"완료 — 새로 발표된 변경 사항이 없습니다.",en:"Done — no new changes announced."},
+  aiFreshHint:{ko:" 노란색으로 표시된 카드가 변경된 항목입니다.",en:" Highlighted cards show what changed."},
+  aiPartial:{ko:n=>` (일부 그룹 검색 실패 ${n}건)`,en:n=>` (${n} group(s) failed to search)`},
+  fAll:{ko:"전체",en:"All"}, fKr:{ko:"국내",en:"Korea"}, fInt:{ko:"해외",en:"International"},
+  allSoc:{ko:"모든 학회",en:"All societies"},
+  showPast:{ko:"지난 학회 보기",en:"Show past meetings"},
+  hidePast:{ko:"지난 학회 숨기기",en:"Hide past meetings"},
+  empty:{ko:"표시할 학회가 없습니다.",en:"No meetings match the current filters."},
+  yearTbd:{ko:"연도 미정",en:"Year TBD"},
+  dateTbd:{ko:"일정 미정",en:"Dates TBD"},
+  bOk:{ko:"일정·장소 확정",en:"DATES & VENUE SET"},
+  bPart:{ko:"날짜 확정 · 장소 미정",en:"DATES SET · VENUE TBD"},
+  bProv:{ko:"잠정 일정",en:"PROVISIONAL"},
+  bTbd:{ko:"일정 미발표",en:"NOT ANNOUNCED"},
+  bDone:{ko:"종료",en:"ENDED"},
+  ongoing:{ko:"개최 중",en:"ONGOING"},
+  footer:{ko:"일정과 장소는 학회 사정에 따라 변경될 수 있으며, AI 검색 결과에도 오류가 있을 수 있습니다. 확정 정보는 반드시 각 학회 공식 홈페이지에서 재확인하세요.",
+          en:"Dates and venues may change, and AI search results may contain errors. Always confirm details on each society's official website."},
+  dow:{ko:["일","월","화","수","목","금","토"],en:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]},
+};
+const t = k => T[k][LANG];
+const L = v => (v&&typeof v==="object") ? (v[LANG]||v.ko||v.en||"") : (v||"");
+
+/* ══════════ 데이터 (2026-07-22 검증) ══════════ */
+let MEETINGS = [
+  /* 국내 */
+  {soc:"KOSRO",group:"KR",start:"2026-05-08",end:"2026-05-08",status:"confirmed",url:"https://www.kosro.or.kr",
+   name:{ko:"2026년 춘계학술대회",en:"2026 Spring Scientific Meeting"},
+   city:{ko:"강릉",en:"Gangneung"},country:{ko:"대한민국",en:"South Korea"},
+   venue:{ko:"스카이베이호텔 경포",en:"Skybay Hotel Gyeongpo"}},
+  {soc:"KOSRO",group:"KR",start:"2026-10-16",end:"2026-10-16",status:"confirmed",
+   url:"https://www.kosro.or.kr/workshop/?category=F",
+   name:{ko:"2026년 제43회 정기학술대회",en:"43rd Annual Meeting (2026)"},
+   city:{ko:"고양",en:"Goyang"},country:{ko:"대한민국",en:"South Korea"},
+   venue:{ko:"킨텍스 (KINTEX)",en:"KINTEX"},
+   note:{ko:"학회 홈페이지 공지 기준. 사전등록·초록접수 일정은 추후 공지 예정.",
+         en:"Per official KOSRO announcement. Registration and abstract deadlines to follow."}},
+  {soc:"KSMP",group:"KR",start:"2026-04-10",end:"2026-04-11",status:"confirmed",url:"https://www.ksmp.or.kr",
+   name:{ko:"제71회 춘계학술대회",en:"71st Spring Meeting"},
+   city:{ko:"서울",en:"Seoul"},country:{ko:"대한민국",en:"South Korea"},
+   venue:{ko:"SETEC 컨벤션센터",en:"SETEC Convention Center"}},
+  {soc:"KSMP",group:"KR",start:null,end:null,yearHint:2026,status:"tbd",url:"https://www.ksmp.or.kr",
+   name:{ko:"제72회 추계학술대회",en:"72nd Fall Meeting"},
+   city:{ko:"미정",en:"TBD"},country:{ko:"대한민국",en:"South Korea"},venue:{ko:"미정",en:"TBD"},
+   note:{ko:"예년 기준 9월경 개최. 공식 일정 미발표.",en:"Typically held around September. Not yet announced."}},
+  {soc:"KARP",group:"KR",start:null,end:null,yearHint:2026,forcePast:true,status:"confirmed",url:"https://karp.or.kr",
+   name:{ko:"2026년 춘계학술대회",en:"2026 Spring Meeting"},
+   city:{ko:"평창",en:"Pyeongchang"},country:{ko:"대한민국",en:"South Korea"},
+   venue:{ko:"평창 (2026년 4월 개최)",en:"Pyeongchang (held April 2026)"},
+   note:{ko:"2026년 4월 평창에서 개최 완료. 정확한 일자는 학회 홈페이지 참조.",
+         en:"Held in Pyeongchang, April 2026. See society website for exact dates."}},
+  {soc:"KARP",group:"KR",start:null,end:null,yearHint:2026,status:"tbd",url:"https://karp.or.kr",
+   name:{ko:"2026년 추계학술대회 및 정기총회",en:"2026 Fall Meeting & General Assembly"},
+   city:{ko:"미정",en:"TBD"},country:{ko:"대한민국",en:"South Korea"},venue:{ko:"미정",en:"TBD"},
+   note:{ko:"예년 기준 11–12월 개최(2024년: 제주 중문). 공식 일정 미발표.",
+         en:"Typically held Nov–Dec (2024: Jungmun, Jeju). Not yet announced."}},
+
+  /* 북미 */
+  {soc:"ASTRO",group:"NA",start:"2026-09-26",end:"2026-09-30",status:"confirmed",url:"https://www.astro.org/annualmeeting",
+   name:{ko:"제68차 연례학술대회 (ASTRO 2026)",en:"68th Annual Meeting (ASTRO 2026)"},
+   city:{ko:"보스턴",en:"Boston"},country:{ko:"미국",en:"USA"},
+   venue:"Thomas M. Menino Convention & Exhibition Center",
+   note:{ko:"주제: “Data to Dialogue”. 등록 진행 중.",en:"Theme: “Data to Dialogue”. Registration open."}},
+  {soc:"ASTRO",group:"NA",start:"2027-09-18",end:"2027-09-22",status:"date-only",url:"https://www.astro.org/meetings-and-education",
+   name:{ko:"제69차 연례학술대회 (ASTRO 2027)",en:"69th Annual Meeting (ASTRO 2027)"},
+   city:{ko:"미정",en:"TBD"},country:{ko:"미국",en:"USA"},venue:{ko:"미정",en:"TBD"},
+   note:{ko:"날짜만 확정, 개최 도시 추후 발표.",en:"Dates set; host city to be announced."}},
+  {soc:"ASTRO",group:"NA",start:"2028-10-21",end:"2028-10-25",status:"date-only",url:"https://www.astro.org/meetings-and-education",
+   name:{ko:"제70차 연례학술대회 (ASTRO 2028)",en:"70th Annual Meeting (ASTRO 2028)"},
+   city:{ko:"미정",en:"TBD"},country:{ko:"미국",en:"USA"},venue:{ko:"미정",en:"TBD"}},
+  {soc:"ASTRO",group:"NA",start:"2029-10-06",end:"2029-10-10",status:"date-only",url:"https://www.astro.org/meetings-and-education",
+   name:{ko:"제71차 연례학술대회 (ASTRO 2029)",en:"71st Annual Meeting (ASTRO 2029)"},
+   city:{ko:"미정",en:"TBD"},country:{ko:"미국",en:"USA"},venue:{ko:"미정",en:"TBD"}},
+  {soc:"AAPM",group:"NA",start:"2026-07-19",end:"2026-07-22",status:"confirmed",
+   url:"https://site.aapm.org/annual-meeting/2026-annual-meeting",
+   name:{ko:"2026 Joint AAPM | COMP 연례학술대회 (제68회)",en:"2026 Joint AAPM | COMP Annual Meeting (68th)"},
+   city:{ko:"밴쿠버",en:"Vancouver"},country:{ko:"캐나다",en:"Canada"},
+   venue:"Vancouver Convention Centre",
+   note:{ko:"캐나다의학물리학회(COMP)와 공동 개최.",en:"Held jointly with the Canadian Organization of Medical Physicists (COMP)."}},
+  {soc:"AAPM",group:"NA",start:"2027-07-25",end:"2027-07-28",status:"confirmed",url:"https://www.aapm.org/meetings",
+   name:{ko:"제69회 연례학술대회 (AAPM 2027)",en:"69th Annual Meeting (AAPM 2027)"},
+   city:{ko:"콜럼버스",en:"Columbus"},country:{ko:"미국 (오하이오)",en:"USA (Ohio)"},
+   venue:"Greater Columbus Convention Center"},
+  {soc:"AAPM",group:"NA",start:"2028-07-30",end:"2028-08-02",status:"confirmed",url:"https://www.aapm.org/meetings",
+   name:{ko:"제70회 연례학술대회 (AAPM 2028)",en:"70th Annual Meeting (AAPM 2028)"},
+   city:{ko:"워싱턴 D.C.",en:"Washington, D.C."},country:{ko:"미국",en:"USA"},venue:{ko:"미정",en:"TBD"}},
+  {soc:"AAPM",group:"NA",start:"2029-06-24",end:"2029-06-27",status:"confirmed",url:"https://www.aapm.org/meetings",
+   name:{ko:"제71회 연례학술대회 (AAPM 2029)",en:"71st Annual Meeting (AAPM 2029)"},
+   city:{ko:"시애틀",en:"Seattle"},country:{ko:"미국",en:"USA"},venue:{ko:"미정",en:"TBD"}},
+  {soc:"AAMD",group:"NA",start:"2026-06-07",end:"2026-06-10",status:"confirmed",url:"https://www.medicaldosimetry.org/meetings",
+   name:{ko:"제51회 연례학술대회 (AAMD 2026)",en:"51st Annual Meeting (AAMD 2026)"},
+   city:{ko:"올랜도",en:"Orlando"},country:{ko:"미국",en:"USA"},venue:"Hilton Orlando Bonnet Creek"},
+  {soc:"AAMD",group:"NA",start:"2026-10-16",end:"2026-10-17",status:"confirmed",
+   url:"https://www.medicaldosimetry.org/meetings/regional-meetings-and-symposiums/",
+   name:{ko:"2026 가을 미팅 (AAMD Fall Meeting)",en:"2026 AAMD Fall Meeting"},
+   city:{ko:"솔트레이크시티",en:"Salt Lake City"},country:{ko:"미국 (유타)",en:"USA (Utah)"},
+   venue:"Salt Lake City Marriott University Park",
+   note:{ko:"Huntsman Cancer Institute와 공동 주최.",en:"Co-hosted with Huntsman Cancer Institute."}},
+  {soc:"AAMD",group:"NA",start:"2027-06-13",end:"2027-06-16",status:"confirmed",url:"https://www.medicaldosimetry.org/meetings",
+   name:{ko:"제52회 연례학술대회 (AAMD 2027)",en:"52nd Annual Meeting (AAMD 2027)"},
+   city:{ko:"샌안토니오",en:"San Antonio"},country:{ko:"미국 (텍사스)",en:"USA (Texas)"},venue:{ko:"미정",en:"TBD"}},
+
+  /* 유럽 */
+  {soc:"ESTRO",group:"EU",start:"2026-05-15",end:"2026-05-19",status:"confirmed",url:"https://www.estro.org/Congresses/ESTRO-2026",
+   name:{ko:"ESTRO 2026 연례총회",en:"ESTRO 2026 Annual Congress"},
+   city:{ko:"스톡홀름",en:"Stockholm"},country:{ko:"스웨덴",en:"Sweden"},venue:"Stockholmsmässan"},
+  {soc:"ESTRO",group:"EU",start:"2027-05-21",end:"2027-05-25",status:"confirmed",url:"https://www.estro.org/Congresses",
+   name:{ko:"ESTRO 2027 연례총회",en:"ESTRO 2027 Annual Congress"},
+   city:{ko:"밀라노",en:"Milan"},country:{ko:"이탈리아",en:"Italy"},
+   venue:{ko:"미정(도시 확정)",en:"TBD (city confirmed)"}},
+
+  /* 일본 */
+  {soc:"JASTRO",group:"JP",start:"2026-11-12",end:"2026-11-14",status:"confirmed",url:"https://www.congre.co.jp/jastro2026/",
+   name:{ko:"제39회 학술대회 (JASTRO 2026)",en:"39th Annual Meeting (JASTRO 2026)"},
+   city:{ko:"치바",en:"Chiba"},country:{ko:"일본",en:"Japan"},
+   venue:{ko:"마쿠하리멧세 (幕張メッセ)",en:"Makuhari Messe"},
+   note:{ko:"주제: “Blooming Boundaries”.",en:"Theme: “Blooming Boundaries”."}},
+
+  /* 국제 */
+  {soc:"PTCOG",group:"INTL",start:"2026-06-08",end:"2026-06-13",status:"confirmed",url:"https://ptcog64.org",
+   name:{ko:"제64회 연례학술대회 (PTCOG 64)",en:"64th Annual Conference (PTCOG 64)"},
+   city:{ko:"도빌(노르망디)",en:"Deauville (Normandy)"},country:{ko:"프랑스",en:"France"},
+   venue:"CID Deauville Convention Center"},
+  {soc:"PTCOG",group:"INTL",start:"2027-06-07",end:"2027-06-12",status:"confirmed",url:"https://ptcog.online/future-ptcog-conferences/",
+   name:{ko:"제65회 연례학술대회 (PTCOG 65)",en:"65th Annual Conference (PTCOG 65)"},
+   city:{ko:"방콕",en:"Bangkok"},country:{ko:"태국",en:"Thailand"},
+   venue:{ko:"King Chulalongkorn Memorial Hospital 양성자센터",en:"King Chulalongkorn Memorial Hospital Proton Center"}},
+  {soc:"PTCOG",group:"INTL",start:"2028-06-26",end:"2028-07-01",status:"confirmed",url:"https://ptcog.online/future-ptcog-conferences/",
+   name:{ko:"제66회 연례학술대회 (PTCOG 66)",en:"66th Annual Conference (PTCOG 66)"},
+   city:{ko:"잭슨빌",en:"Jacksonville"},country:{ko:"미국 (플로리다)",en:"USA (Florida)"},venue:"Mayo Clinic Florida"},
+  {soc:"PTCOG",group:"INTL",start:"2029-06-21",end:"2029-06-27",status:"provisional",url:"https://ptcog.online/future-ptcog-conferences/",
+   name:{ko:"제67회 연례학술대회 (PTCOG 67)",en:"67th Annual Conference (PTCOG 67)"},
+   city:{ko:"밀라노",en:"Milan"},country:{ko:"이탈리아",en:"Italy"},venue:"CNAO · IEO · Humanitas",
+   note:{ko:"잠정(Provisional) 일정.",en:"Provisional dates."}},
+  {soc:"PTCOG-AO",group:"INTL",start:"2026-09-04",end:"2026-09-06",status:"confirmed",url:"https://ptcog-ao2026.com",
+   name:{ko:"PTCOG Asia-Oceania 2026",en:"PTCOG Asia-Oceania 2026"},
+   city:{ko:"첸나이",en:"Chennai"},country:{ko:"인도",en:"India"},venue:"Taj Fisherman's Cove Resort & Spa"},
+  {soc:"ICCR",group:"INTL",start:null,end:null,yearHint:2027,status:"tbd",url:"https://iccr2024.org",
+   name:{ko:"제21회 ICCR (Computers in Radiation Therapy)",en:"21st ICCR (Computers in Radiation Therapy)"},
+   city:{ko:"미정",en:"TBD"},country:{ko:"미정",en:"TBD"},venue:{ko:"미정",en:"TBD"},
+   note:{ko:"3년 주기 개최. 직전 대회: 제20회 2024년 7월 리옹(프랑스). 차기 개최지 미발표.",
+         en:"Held every 3 years. Previous: 20th ICCR, July 2024, Lyon, France. Next host not announced."}},
+  {soc:"MICCAI",group:"INTL",start:"2026-09-27",end:"2026-10-01",status:"confirmed",url:"https://conferences.miccai.org/2026",
+   name:{ko:"제29회 MICCAI 2026",en:"29th MICCAI 2026"},
+   city:{ko:"스트라스부르",en:"Strasbourg"},country:{ko:"프랑스",en:"France"},
+   venue:{ko:"미정(도시 확정)",en:"TBD (city confirmed)"},
+   note:{ko:"아부다비에서 스트라스부르로 개최지 변경됨.",en:"Relocated from Abu Dhabi to Strasbourg."}},
+  {soc:"MICCAI",group:"INTL",start:"2027-09-26",end:"2027-10-01",status:"confirmed",
+   url:"https://miccai.org/index.php/events/upcoming-conferences/",
+   name:{ko:"제30회 MICCAI 2027",en:"30th MICCAI 2027"},
+   city:{ko:"오클랜드",en:"Auckland"},country:{ko:"뉴질랜드",en:"New Zealand"},venue:{ko:"미정",en:"TBD"}},
+  {soc:"MICCAI",group:"INTL",start:"2028-10-16",end:"2028-10-20",status:"confirmed",
+   url:"https://miccai.org/index.php/events/upcoming-conferences/",
+   name:{ko:"제31회 MICCAI 2028",en:"31st MICCAI 2028"},
+   city:{ko:"상파울루",en:"São Paulo"},country:{ko:"브라질",en:"Brazil"},venue:{ko:"미정",en:"TBD"}},
+  {soc:"MR-Linac Consortium",group:"INTL",start:"2026-10-28",end:"2026-10-30",status:"confirmed",
+   url:"https://mrlconsortium.org/meeting-and-events/",
+   name:{ko:"제21회 연례 컨소시엄 미팅",en:"21st Annual Consortium Meeting"},
+   city:{ko:"몬트리올",en:"Montreal"},country:{ko:"캐나다",en:"Canada"},venue:{ko:"미정",en:"TBD"}},
+];
+
+/* ══════════ 렌더링 ══════════ */
+const TODAY=new Date();TODAY.setHours(0,0,0,0);
+const fmt2=n=>String(n).padStart(2,"0");
+const parse=s=>{const[y,m,d]=s.split("-").map(Number);return new Date(y,m-1,d)};
+const dd=d=>Math.round((d-TODAY)/86400000);
+const isPast=m=>m.forcePast||(m.start?dd(parse(m.end||m.start))<0:false);
+
+function dateBlock(m){
+  if(!m.start)return`<div class="date"><span class="tbd">${t("dateTbd")}<br>(${m.yearHint||"?"})</span></div>`;
+  const dw=T.dow[LANG];
+  const s=parse(m.start),e=parse(m.end||m.start);
+  const t1=`<span class="mo">${s.getMonth()+1}/${fmt2(s.getDate())}</span>(${dw[s.getDay()]})`;
+  if(m.end&&m.end!==m.start)
+    return`<div class="date">${t1}<br>– <span class="mo">${e.getMonth()+1}/${fmt2(e.getDate())}</span>(${dw[e.getDay()]})</div>`;
+  return`<div class="date">${t1}</div>`;
+}
+function badge(m){
+  if(isPast(m))return`<span class="badge done">${t("bDone")}</span>`;
+  if(m.status==="confirmed")return`<span class="badge ok">${t("bOk")}</span>`;
+  if(m.status==="date-only")return`<span class="badge part">${t("bPart")}</span>`;
+  if(m.status==="provisional")return`<span class="badge part">${t("bProv")}</span>`;
+  return`<span class="badge tbd">${t("bTbd")}</span>`;
+}
+function dtag(m){
+  if(isPast(m)||!m.start)return"";
+  const d=dd(parse(m.start));
+  if(d===0)return`<span class="ddaytag hot">D-DAY</span>`;
+  if(d<0)return`<span class="ddaytag hot">${t("ongoing")}</span>`;
+  return`<span class="ddaytag ${d<=90?"hot":""}">D-${d}</span>`;
+}
+function cardHTML(m,fresh){
+  const note=L(m.note);
+  return`<article class="card ${isPast(m)?"past":""} ${fresh?"fresh":""}" data-g="${m.group}">
+    ${dateBlock(m)}
+    <div class="body"><span class="soc">${m.soc}</span>
+      <h3><a href="${m.url}" target="_blank" rel="noopener">${L(m.name)}</a></h3>
+      <div class="meta"><span class="loc">${L(m.city)}, ${L(m.country)}</span> · ${L(m.venue)}</div>
+      ${note?`<div class="note">${note}</div>`:""}
+    </div>
+    <div class="right">${badge(m)}${dtag(m)}</div></article>`;
+}
+
+let filter="all",socFilter="all",showPast=false,freshSet=new Set(),lastFresh=new Set();
+const gYear=m=>m.start?parse(m.start).getFullYear():(m.yearHint||9999);
+const sKey=m=>m.start?parse(m.start).getTime():new Date(m.yearHint||2099,11,31).getTime();
+
+function buildSocSelect(){
+  const sel=document.getElementById("socSel");
+  const socs=[...new Set(MEETINGS.map(m=>m.soc))].sort();
+  sel.innerHTML=`<option value="all">${t("allSoc")}</option>`+socs.map(s=>`<option>${s}</option>`).join("");
+  sel.value=socs.includes(socFilter)?socFilter:"all";
+}
+function render(){
+  const list=document.getElementById("list");
+  let items=MEETINGS.filter(m=>{
+    if(filter==="KR"&&m.group!=="KR")return false;
+    if(filter==="INT"&&m.group==="KR")return false;
+    if(socFilter!=="all"&&m.soc!==socFilter)return false;
+    if(!showPast&&isPast(m))return false;
+    return true;
+  }).sort((a,b)=>sKey(a)-sKey(b));
+  if(!items.length){list.innerHTML=`<div class="empty">${t("empty")}</div>`;return;}
+  const years=[...new Set(items.map(gYear))].sort();
+  list.innerHTML=years.map(y=>`<section class="yeargroup"><h2>${y===9999?t("yearTbd"):y}</h2>
+    <div class="cards">${items.filter(m=>gYear(m)===y).map(m=>cardHTML(m,freshSet.has(m.soc+"|"+L(m.name)))).join("")}</div></section>`).join("");
+  freshSet.clear();
+}
+function applyLang(){
+  document.documentElement.lang=LANG;
+  document.querySelectorAll("[data-t]").forEach(el=>{el.textContent=t(el.dataset.t)});
+  document.getElementById("pastBtn").textContent=showPast?t("hidePast"):t("showPast");
+  const st=document.getElementById("updStatus");
+  if(!st.dataset.dynamic)st.textContent=t("aiIdle");
+  document.getElementById("langKo").classList.toggle("on",LANG==="ko");
+  document.getElementById("langEn").classList.toggle("on",LANG==="en");
+  buildSocSelect();render();
+}
+document.getElementById("langKo").addEventListener("click",()=>{LANG="ko";applyLang();});
+document.getElementById("langEn").addEventListener("click",()=>{LANG="en";applyLang();});
+
+document.querySelectorAll(".chip").forEach(c=>c.addEventListener("click",()=>{
+  document.querySelectorAll(".chip").forEach(x=>x.classList.remove("on"));
+  c.classList.add("on");filter=c.dataset.f;render();
+}));
+document.getElementById("socSel").addEventListener("change",e=>{socFilter=e.target.value;render();});
+document.getElementById("pastBtn").addEventListener("click",e=>{
+  showPast=!showPast;e.target.textContent=showPast?t("hidePast"):t("showPast");render();
+});
+
+/* ══════════ data.json 로더 (GitHub Actions가 매일 갱신) ══════════ */
+async function loadData(){
+  try{
+    const res=await fetch("data.json?ts="+Date.now());
+    if(!res.ok)throw 0;
+    const d=await res.json();
+    if(Array.isArray(d.meetings)&&d.meetings.length){MEETINGS=d.meetings;}
+    if(d.meta&&d.meta.lastUpdated){
+      const dt=new Date(d.meta.lastUpdated);
+      document.getElementById("lastAiCheck").innerHTML=
+        t("aiChecked")+" <b>"+dt.getFullYear()+"-"+fmt2(dt.getMonth()+1)+"-"+fmt2(dt.getDate())+"</b>";
+    }
+  }catch(e){}
+  document.getElementById("updStatus").textContent=t("aiIdle");
+  buildSocSelect();render();
+}
+
+applyLang();
+loadData();
+</script>
+</body>
+</html>

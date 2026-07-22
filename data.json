@@ -1,0 +1,751 @@
+{
+ "meta": {
+  "lastUpdated": "2026-07-22T00:00:00+09:00",
+  "note": "baseline verified manually"
+ },
+ "meetings": [
+  {
+   "soc": "KOSRO",
+   "group": "KR",
+   "start": "2026-05-08",
+   "end": "2026-05-08",
+   "status": "confirmed",
+   "url": "https://www.kosro.or.kr",
+   "name": {
+    "ko": "2026년 춘계학술대회",
+    "en": "2026 Spring Scientific Meeting"
+   },
+   "city": {
+    "ko": "강릉",
+    "en": "Gangneung"
+   },
+   "country": {
+    "ko": "대한민국",
+    "en": "South Korea"
+   },
+   "venue": {
+    "ko": "스카이베이호텔 경포",
+    "en": "Skybay Hotel Gyeongpo"
+   }
+  },
+  {
+   "soc": "KOSRO",
+   "group": "KR",
+   "start": "2026-10-16",
+   "end": "2026-10-16",
+   "status": "confirmed",
+   "url": "https://www.kosro.or.kr/workshop/?category=F",
+   "name": {
+    "ko": "2026년 제43회 정기학술대회",
+    "en": "43rd Annual Meeting (2026)"
+   },
+   "city": {
+    "ko": "고양",
+    "en": "Goyang"
+   },
+   "country": {
+    "ko": "대한민국",
+    "en": "South Korea"
+   },
+   "venue": {
+    "ko": "킨텍스 (KINTEX)",
+    "en": "KINTEX"
+   },
+   "note": {
+    "ko": "학회 홈페이지 공지 기준. 사전등록·초록접수 일정은 추후 공지 예정.",
+    "en": "Per official KOSRO announcement. Registration and abstract deadlines to follow."
+   }
+  },
+  {
+   "soc": "KSMP",
+   "group": "KR",
+   "start": "2026-04-10",
+   "end": "2026-04-11",
+   "status": "confirmed",
+   "url": "https://www.ksmp.or.kr",
+   "name": {
+    "ko": "제71회 춘계학술대회",
+    "en": "71st Spring Meeting"
+   },
+   "city": {
+    "ko": "서울",
+    "en": "Seoul"
+   },
+   "country": {
+    "ko": "대한민국",
+    "en": "South Korea"
+   },
+   "venue": {
+    "ko": "SETEC 컨벤션센터",
+    "en": "SETEC Convention Center"
+   }
+  },
+  {
+   "soc": "KSMP",
+   "group": "KR",
+   "start": null,
+   "end": null,
+   "yearHint": 2026,
+   "status": "tbd",
+   "url": "https://www.ksmp.or.kr",
+   "name": {
+    "ko": "제72회 추계학술대회",
+    "en": "72nd Fall Meeting"
+   },
+   "city": {
+    "ko": "미정",
+    "en": "TBD"
+   },
+   "country": {
+    "ko": "대한민국",
+    "en": "South Korea"
+   },
+   "venue": {
+    "ko": "미정",
+    "en": "TBD"
+   },
+   "note": {
+    "ko": "예년 기준 9월경 개최. 공식 일정 미발표.",
+    "en": "Typically held around September. Not yet announced."
+   }
+  },
+  {
+   "soc": "KARP",
+   "group": "KR",
+   "start": null,
+   "end": null,
+   "yearHint": 2026,
+   "forcePast": true,
+   "status": "confirmed",
+   "url": "https://karp.or.kr",
+   "name": {
+    "ko": "2026년 춘계학술대회",
+    "en": "2026 Spring Meeting"
+   },
+   "city": {
+    "ko": "평창",
+    "en": "Pyeongchang"
+   },
+   "country": {
+    "ko": "대한민국",
+    "en": "South Korea"
+   },
+   "venue": {
+    "ko": "평창 (2026년 4월 개최)",
+    "en": "Pyeongchang (held April 2026)"
+   },
+   "note": {
+    "ko": "2026년 4월 평창에서 개최 완료. 정확한 일자는 학회 홈페이지 참조.",
+    "en": "Held in Pyeongchang, April 2026. See society website for exact dates."
+   }
+  },
+  {
+   "soc": "KARP",
+   "group": "KR",
+   "start": null,
+   "end": null,
+   "yearHint": 2026,
+   "status": "tbd",
+   "url": "https://karp.or.kr",
+   "name": {
+    "ko": "2026년 추계학술대회 및 정기총회",
+    "en": "2026 Fall Meeting & General Assembly"
+   },
+   "city": {
+    "ko": "미정",
+    "en": "TBD"
+   },
+   "country": {
+    "ko": "대한민국",
+    "en": "South Korea"
+   },
+   "venue": {
+    "ko": "미정",
+    "en": "TBD"
+   },
+   "note": {
+    "ko": "예년 기준 11–12월 개최(2024년: 제주 중문). 공식 일정 미발표.",
+    "en": "Typically held Nov–Dec (2024: Jungmun, Jeju). Not yet announced."
+   }
+  },
+  {
+   "soc": "ASTRO",
+   "group": "NA",
+   "start": "2026-09-26",
+   "end": "2026-09-30",
+   "status": "confirmed",
+   "url": "https://www.astro.org/annualmeeting",
+   "name": {
+    "ko": "제68차 연례학술대회 (ASTRO 2026)",
+    "en": "68th Annual Meeting (ASTRO 2026)"
+   },
+   "city": {
+    "ko": "보스턴",
+    "en": "Boston"
+   },
+   "country": {
+    "ko": "미국",
+    "en": "USA"
+   },
+   "venue": "Thomas M. Menino Convention & Exhibition Center",
+   "note": {
+    "ko": "주제: “Data to Dialogue”. 등록 진행 중.",
+    "en": "Theme: “Data to Dialogue”. Registration open."
+   }
+  },
+  {
+   "soc": "ASTRO",
+   "group": "NA",
+   "start": "2027-09-18",
+   "end": "2027-09-22",
+   "status": "date-only",
+   "url": "https://www.astro.org/meetings-and-education",
+   "name": {
+    "ko": "제69차 연례학술대회 (ASTRO 2027)",
+    "en": "69th Annual Meeting (ASTRO 2027)"
+   },
+   "city": {
+    "ko": "미정",
+    "en": "TBD"
+   },
+   "country": {
+    "ko": "미국",
+    "en": "USA"
+   },
+   "venue": {
+    "ko": "미정",
+    "en": "TBD"
+   },
+   "note": {
+    "ko": "날짜만 확정, 개최 도시 추후 발표.",
+    "en": "Dates set; host city to be announced."
+   }
+  },
+  {
+   "soc": "ASTRO",
+   "group": "NA",
+   "start": "2028-10-21",
+   "end": "2028-10-25",
+   "status": "date-only",
+   "url": "https://www.astro.org/meetings-and-education",
+   "name": {
+    "ko": "제70차 연례학술대회 (ASTRO 2028)",
+    "en": "70th Annual Meeting (ASTRO 2028)"
+   },
+   "city": {
+    "ko": "미정",
+    "en": "TBD"
+   },
+   "country": {
+    "ko": "미국",
+    "en": "USA"
+   },
+   "venue": {
+    "ko": "미정",
+    "en": "TBD"
+   }
+  },
+  {
+   "soc": "ASTRO",
+   "group": "NA",
+   "start": "2029-10-06",
+   "end": "2029-10-10",
+   "status": "date-only",
+   "url": "https://www.astro.org/meetings-and-education",
+   "name": {
+    "ko": "제71차 연례학술대회 (ASTRO 2029)",
+    "en": "71st Annual Meeting (ASTRO 2029)"
+   },
+   "city": {
+    "ko": "미정",
+    "en": "TBD"
+   },
+   "country": {
+    "ko": "미국",
+    "en": "USA"
+   },
+   "venue": {
+    "ko": "미정",
+    "en": "TBD"
+   }
+  },
+  {
+   "soc": "AAPM",
+   "group": "NA",
+   "start": "2026-07-19",
+   "end": "2026-07-22",
+   "status": "confirmed",
+   "url": "https://site.aapm.org/annual-meeting/2026-annual-meeting",
+   "name": {
+    "ko": "2026 Joint AAPM | COMP 연례학술대회 (제68회)",
+    "en": "2026 Joint AAPM | COMP Annual Meeting (68th)"
+   },
+   "city": {
+    "ko": "밴쿠버",
+    "en": "Vancouver"
+   },
+   "country": {
+    "ko": "캐나다",
+    "en": "Canada"
+   },
+   "venue": "Vancouver Convention Centre",
+   "note": {
+    "ko": "캐나다의학물리학회(COMP)와 공동 개최.",
+    "en": "Held jointly with the Canadian Organization of Medical Physicists (COMP)."
+   }
+  },
+  {
+   "soc": "AAPM",
+   "group": "NA",
+   "start": "2027-07-25",
+   "end": "2027-07-28",
+   "status": "confirmed",
+   "url": "https://www.aapm.org/meetings",
+   "name": {
+    "ko": "제69회 연례학술대회 (AAPM 2027)",
+    "en": "69th Annual Meeting (AAPM 2027)"
+   },
+   "city": {
+    "ko": "콜럼버스",
+    "en": "Columbus"
+   },
+   "country": {
+    "ko": "미국 (오하이오)",
+    "en": "USA (Ohio)"
+   },
+   "venue": "Greater Columbus Convention Center"
+  },
+  {
+   "soc": "AAPM",
+   "group": "NA",
+   "start": "2028-07-30",
+   "end": "2028-08-02",
+   "status": "confirmed",
+   "url": "https://www.aapm.org/meetings",
+   "name": {
+    "ko": "제70회 연례학술대회 (AAPM 2028)",
+    "en": "70th Annual Meeting (AAPM 2028)"
+   },
+   "city": {
+    "ko": "워싱턴 D.C.",
+    "en": "Washington, D.C."
+   },
+   "country": {
+    "ko": "미국",
+    "en": "USA"
+   },
+   "venue": {
+    "ko": "미정",
+    "en": "TBD"
+   }
+  },
+  {
+   "soc": "AAPM",
+   "group": "NA",
+   "start": "2029-06-24",
+   "end": "2029-06-27",
+   "status": "confirmed",
+   "url": "https://www.aapm.org/meetings",
+   "name": {
+    "ko": "제71회 연례학술대회 (AAPM 2029)",
+    "en": "71st Annual Meeting (AAPM 2029)"
+   },
+   "city": {
+    "ko": "시애틀",
+    "en": "Seattle"
+   },
+   "country": {
+    "ko": "미국",
+    "en": "USA"
+   },
+   "venue": {
+    "ko": "미정",
+    "en": "TBD"
+   }
+  },
+  {
+   "soc": "AAMD",
+   "group": "NA",
+   "start": "2026-06-07",
+   "end": "2026-06-10",
+   "status": "confirmed",
+   "url": "https://www.medicaldosimetry.org/meetings",
+   "name": {
+    "ko": "제51회 연례학술대회 (AAMD 2026)",
+    "en": "51st Annual Meeting (AAMD 2026)"
+   },
+   "city": {
+    "ko": "올랜도",
+    "en": "Orlando"
+   },
+   "country": {
+    "ko": "미국",
+    "en": "USA"
+   },
+   "venue": "Hilton Orlando Bonnet Creek"
+  },
+  {
+   "soc": "AAMD",
+   "group": "NA",
+   "start": "2026-10-16",
+   "end": "2026-10-17",
+   "status": "confirmed",
+   "url": "https://www.medicaldosimetry.org/meetings/regional-meetings-and-symposiums/",
+   "name": {
+    "ko": "2026 가을 미팅 (AAMD Fall Meeting)",
+    "en": "2026 AAMD Fall Meeting"
+   },
+   "city": {
+    "ko": "솔트레이크시티",
+    "en": "Salt Lake City"
+   },
+   "country": {
+    "ko": "미국 (유타)",
+    "en": "USA (Utah)"
+   },
+   "venue": "Salt Lake City Marriott University Park",
+   "note": {
+    "ko": "Huntsman Cancer Institute와 공동 주최.",
+    "en": "Co-hosted with Huntsman Cancer Institute."
+   }
+  },
+  {
+   "soc": "AAMD",
+   "group": "NA",
+   "start": "2027-06-13",
+   "end": "2027-06-16",
+   "status": "confirmed",
+   "url": "https://www.medicaldosimetry.org/meetings",
+   "name": {
+    "ko": "제52회 연례학술대회 (AAMD 2027)",
+    "en": "52nd Annual Meeting (AAMD 2027)"
+   },
+   "city": {
+    "ko": "샌안토니오",
+    "en": "San Antonio"
+   },
+   "country": {
+    "ko": "미국 (텍사스)",
+    "en": "USA (Texas)"
+   },
+   "venue": {
+    "ko": "미정",
+    "en": "TBD"
+   }
+  },
+  {
+   "soc": "ESTRO",
+   "group": "EU",
+   "start": "2026-05-15",
+   "end": "2026-05-19",
+   "status": "confirmed",
+   "url": "https://www.estro.org/Congresses/ESTRO-2026",
+   "name": {
+    "ko": "ESTRO 2026 연례총회",
+    "en": "ESTRO 2026 Annual Congress"
+   },
+   "city": {
+    "ko": "스톡홀름",
+    "en": "Stockholm"
+   },
+   "country": {
+    "ko": "스웨덴",
+    "en": "Sweden"
+   },
+   "venue": "Stockholmsmässan"
+  },
+  {
+   "soc": "ESTRO",
+   "group": "EU",
+   "start": "2027-05-21",
+   "end": "2027-05-25",
+   "status": "confirmed",
+   "url": "https://www.estro.org/Congresses",
+   "name": {
+    "ko": "ESTRO 2027 연례총회",
+    "en": "ESTRO 2027 Annual Congress"
+   },
+   "city": {
+    "ko": "밀라노",
+    "en": "Milan"
+   },
+   "country": {
+    "ko": "이탈리아",
+    "en": "Italy"
+   },
+   "venue": {
+    "ko": "미정(도시 확정)",
+    "en": "TBD (city confirmed)"
+   }
+  },
+  {
+   "soc": "JASTRO",
+   "group": "JP",
+   "start": "2026-11-12",
+   "end": "2026-11-14",
+   "status": "confirmed",
+   "url": "https://www.congre.co.jp/jastro2026/",
+   "name": {
+    "ko": "제39회 학술대회 (JASTRO 2026)",
+    "en": "39th Annual Meeting (JASTRO 2026)"
+   },
+   "city": {
+    "ko": "치바",
+    "en": "Chiba"
+   },
+   "country": {
+    "ko": "일본",
+    "en": "Japan"
+   },
+   "venue": {
+    "ko": "마쿠하리멧세 (幕張メッセ)",
+    "en": "Makuhari Messe"
+   },
+   "note": {
+    "ko": "주제: “Blooming Boundaries”.",
+    "en": "Theme: “Blooming Boundaries”."
+   }
+  },
+  {
+   "soc": "PTCOG",
+   "group": "INTL",
+   "start": "2026-06-08",
+   "end": "2026-06-13",
+   "status": "confirmed",
+   "url": "https://ptcog64.org",
+   "name": {
+    "ko": "제64회 연례학술대회 (PTCOG 64)",
+    "en": "64th Annual Conference (PTCOG 64)"
+   },
+   "city": {
+    "ko": "도빌(노르망디)",
+    "en": "Deauville (Normandy)"
+   },
+   "country": {
+    "ko": "프랑스",
+    "en": "France"
+   },
+   "venue": "CID Deauville Convention Center"
+  },
+  {
+   "soc": "PTCOG",
+   "group": "INTL",
+   "start": "2027-06-07",
+   "end": "2027-06-12",
+   "status": "confirmed",
+   "url": "https://ptcog.online/future-ptcog-conferences/",
+   "name": {
+    "ko": "제65회 연례학술대회 (PTCOG 65)",
+    "en": "65th Annual Conference (PTCOG 65)"
+   },
+   "city": {
+    "ko": "방콕",
+    "en": "Bangkok"
+   },
+   "country": {
+    "ko": "태국",
+    "en": "Thailand"
+   },
+   "venue": {
+    "ko": "King Chulalongkorn Memorial Hospital 양성자센터",
+    "en": "King Chulalongkorn Memorial Hospital Proton Center"
+   }
+  },
+  {
+   "soc": "PTCOG",
+   "group": "INTL",
+   "start": "2028-06-26",
+   "end": "2028-07-01",
+   "status": "confirmed",
+   "url": "https://ptcog.online/future-ptcog-conferences/",
+   "name": {
+    "ko": "제66회 연례학술대회 (PTCOG 66)",
+    "en": "66th Annual Conference (PTCOG 66)"
+   },
+   "city": {
+    "ko": "잭슨빌",
+    "en": "Jacksonville"
+   },
+   "country": {
+    "ko": "미국 (플로리다)",
+    "en": "USA (Florida)"
+   },
+   "venue": "Mayo Clinic Florida"
+  },
+  {
+   "soc": "PTCOG",
+   "group": "INTL",
+   "start": "2029-06-21",
+   "end": "2029-06-27",
+   "status": "provisional",
+   "url": "https://ptcog.online/future-ptcog-conferences/",
+   "name": {
+    "ko": "제67회 연례학술대회 (PTCOG 67)",
+    "en": "67th Annual Conference (PTCOG 67)"
+   },
+   "city": {
+    "ko": "밀라노",
+    "en": "Milan"
+   },
+   "country": {
+    "ko": "이탈리아",
+    "en": "Italy"
+   },
+   "venue": "CNAO · IEO · Humanitas",
+   "note": {
+    "ko": "잠정(Provisional) 일정.",
+    "en": "Provisional dates."
+   }
+  },
+  {
+   "soc": "PTCOG-AO",
+   "group": "INTL",
+   "start": "2026-09-04",
+   "end": "2026-09-06",
+   "status": "confirmed",
+   "url": "https://ptcog-ao2026.com",
+   "name": {
+    "ko": "PTCOG Asia-Oceania 2026",
+    "en": "PTCOG Asia-Oceania 2026"
+   },
+   "city": {
+    "ko": "첸나이",
+    "en": "Chennai"
+   },
+   "country": {
+    "ko": "인도",
+    "en": "India"
+   },
+   "venue": "Taj Fisherman's Cove Resort & Spa"
+  },
+  {
+   "soc": "ICCR",
+   "group": "INTL",
+   "start": null,
+   "end": null,
+   "yearHint": 2027,
+   "status": "tbd",
+   "url": "https://iccr2024.org",
+   "name": {
+    "ko": "제21회 ICCR (Computers in Radiation Therapy)",
+    "en": "21st ICCR (Computers in Radiation Therapy)"
+   },
+   "city": {
+    "ko": "미정",
+    "en": "TBD"
+   },
+   "country": {
+    "ko": "미정",
+    "en": "TBD"
+   },
+   "venue": {
+    "ko": "미정",
+    "en": "TBD"
+   },
+   "note": {
+    "ko": "3년 주기 개최. 직전 대회: 제20회 2024년 7월 리옹(프랑스). 차기 개최지 미발표.",
+    "en": "Held every 3 years. Previous: 20th ICCR, July 2024, Lyon, France. Next host not announced."
+   }
+  },
+  {
+   "soc": "MICCAI",
+   "group": "INTL",
+   "start": "2026-09-27",
+   "end": "2026-10-01",
+   "status": "confirmed",
+   "url": "https://conferences.miccai.org/2026",
+   "name": {
+    "ko": "제29회 MICCAI 2026",
+    "en": "29th MICCAI 2026"
+   },
+   "city": {
+    "ko": "스트라스부르",
+    "en": "Strasbourg"
+   },
+   "country": {
+    "ko": "프랑스",
+    "en": "France"
+   },
+   "venue": {
+    "ko": "미정(도시 확정)",
+    "en": "TBD (city confirmed)"
+   },
+   "note": {
+    "ko": "아부다비에서 스트라스부르로 개최지 변경됨.",
+    "en": "Relocated from Abu Dhabi to Strasbourg."
+   }
+  },
+  {
+   "soc": "MICCAI",
+   "group": "INTL",
+   "start": "2027-09-26",
+   "end": "2027-10-01",
+   "status": "confirmed",
+   "url": "https://miccai.org/index.php/events/upcoming-conferences/",
+   "name": {
+    "ko": "제30회 MICCAI 2027",
+    "en": "30th MICCAI 2027"
+   },
+   "city": {
+    "ko": "오클랜드",
+    "en": "Auckland"
+   },
+   "country": {
+    "ko": "뉴질랜드",
+    "en": "New Zealand"
+   },
+   "venue": {
+    "ko": "미정",
+    "en": "TBD"
+   }
+  },
+  {
+   "soc": "MICCAI",
+   "group": "INTL",
+   "start": "2028-10-16",
+   "end": "2028-10-20",
+   "status": "confirmed",
+   "url": "https://miccai.org/index.php/events/upcoming-conferences/",
+   "name": {
+    "ko": "제31회 MICCAI 2028",
+    "en": "31st MICCAI 2028"
+   },
+   "city": {
+    "ko": "상파울루",
+    "en": "São Paulo"
+   },
+   "country": {
+    "ko": "브라질",
+    "en": "Brazil"
+   },
+   "venue": {
+    "ko": "미정",
+    "en": "TBD"
+   }
+  },
+  {
+   "soc": "MR-Linac Consortium",
+   "group": "INTL",
+   "start": "2026-10-28",
+   "end": "2026-10-30",
+   "status": "confirmed",
+   "url": "https://mrlconsortium.org/meeting-and-events/",
+   "name": {
+    "ko": "제21회 연례 컨소시엄 미팅",
+    "en": "21st Annual Consortium Meeting"
+   },
+   "city": {
+    "ko": "몬트리올",
+    "en": "Montreal"
+   },
+   "country": {
+    "ko": "캐나다",
+    "en": "Canada"
+   },
+   "venue": {
+    "ko": "미정",
+    "en": "TBD"
+   }
+  }
+ ]
+}
