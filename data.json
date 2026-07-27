@@ -1,9 +1,9 @@
 {
  "meta": {
-  "lastUpdated": "2026-07-22T02:43:41.458Z",
+  "lastUpdated": "2026-07-27T16:17:47.643Z",
   "note": "baseline verified manually",
   "lastRun": {
-   "changed": 1,
+   "changed": 2,
    "failedGroups": 0
   }
  },
@@ -735,7 +735,7 @@
    "status": "confirmed",
    "url": "https://mrlconsortium.org/meeting-and-events/",
    "name": {
-    "ko": "제21회 연례 컨소시엄 미팅",
+    "ko": "제21차 연간 컨소시엄 회의",
     "en": "21st Annual Consortium Meeting"
    },
    "city": {
@@ -749,6 +749,10 @@
    "venue": {
     "ko": "미정",
     "en": "TBD"
+   },
+   "note": {
+    "ko": "날짜 확인됨",
+    "en": "Dates confirmed"
    }
   },
   {
@@ -777,6 +781,34 @@
     "en": "Newly registered"
    },
    "url": "https://www.aocmp2026.org",
+   "group": "INTL"
+  },
+  {
+   "soc": "ICCR",
+   "name": {
+    "ko": "21차 국제 방사선치료 컴퓨터 활용 학술대회",
+    "en": "21st International Conference on the Use of Computers in Radiation Therapy"
+   },
+   "start": "2027-07-05",
+   "end": "2027-07-08",
+   "status": "confirmed",
+   "city": {
+    "ko": "퀘벡시",
+    "en": "Quebec City"
+   },
+   "country": {
+    "ko": "캐나다",
+    "en": "Canada"
+   },
+   "venue": {
+    "ko": "퀘벡시 컨벤션 센터",
+    "en": "Quebec City Convention Centre"
+   },
+   "note": {
+    "ko": "라발 대학 과학기술 대학원 주관",
+    "en": "Organized by Université Laval's Faculty of Science and Engineering"
+   },
+   "url": "https://www.convention.qc.ca/en/event-calendar/computers-in-radiation-conference-2027/",
    "group": "INTL"
   }
  ]
