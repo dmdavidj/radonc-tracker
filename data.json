@@ -1,9 +1,9 @@
 {
  "meta": {
-  "lastUpdated": "2026-07-27T16:17:47.643Z",
+  "lastUpdated": "2026-08-03T16:24:05.107Z",
   "note": "baseline verified manually",
   "lastRun": {
-   "changed": 2,
+   "changed": 3,
    "failedGroups": 0
   }
  },
@@ -682,12 +682,12 @@
   {
    "soc": "MICCAI",
    "group": "INTL",
-   "start": "2027-09-26",
+   "start": "2027-09-27",
    "end": "2027-10-01",
    "status": "confirmed",
    "url": "https://miccai.org/index.php/events/upcoming-conferences/",
    "name": {
-    "ko": "제30회 MICCAI 2027",
+    "ko": "30차 MICCAI 2027",
     "en": "30th MICCAI 2027"
    },
    "city": {
@@ -699,8 +699,12 @@
     "en": "New Zealand"
    },
    "venue": {
-    "ko": "미정",
+    "ko": "TBD",
     "en": "TBD"
+   },
+   "note": {
+    "ko": "시작일 수정됨 (9월 26일에서 9월 27일)",
+    "en": "Start date corrected (from Sept 26 to Sept 27)"
    }
   },
   {
@@ -809,6 +813,62 @@
     "en": "Organized by Université Laval's Faculty of Science and Engineering"
    },
    "url": "https://www.convention.qc.ca/en/event-calendar/computers-in-radiation-conference-2027/",
+   "group": "INTL"
+  },
+  {
+   "soc": "JASTRO",
+   "name": {
+    "ko": "제40회 학술대회",
+    "en": "40th Annual Meeting (JASTRO 2027)"
+   },
+   "start": "2027-05-26",
+   "end": "2027-05-28",
+   "status": "confirmed",
+   "city": {
+    "ko": "오사카",
+    "en": "Osaka"
+   },
+   "country": {
+    "ko": "일본",
+    "en": "Japan"
+   },
+   "venue": {
+    "ko": "오사카 국제회의장",
+    "en": "Osaka International Conference Center"
+   },
+   "note": {
+    "ko": "",
+    "en": ""
+   },
+   "url": "https://www.jastro.or.jp",
+   "group": "JP"
+  },
+  {
+   "soc": "PTCOG",
+   "name": {
+    "ko": "PTCOG-AO 2026 제6회 연례회의",
+    "en": "PTCOG-AO 2026 (6th Annual Conference Asia-Oceania)"
+   },
+   "start": "2026-09-04",
+   "end": "2026-09-06",
+   "status": "confirmed",
+   "city": {
+    "ko": "첸나이",
+    "en": "Chennai"
+   },
+   "country": {
+    "ko": "인도",
+    "en": "India"
+   },
+   "venue": {
+    "ko": "아폴로 양성자암센터",
+    "en": "Apollo Proton Cancer Centre"
+   },
+   "note": {
+    "ko": "",
+    "en": "PTCOG 지역회의"
+   },
+   "url": "https://ptcog-ao2026.com/",
    "group": "INTL"
   }
  ]
