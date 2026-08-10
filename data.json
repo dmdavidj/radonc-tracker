@@ -1,9 +1,9 @@
 {
  "meta": {
-  "lastUpdated": "2026-08-03T16:24:05.107Z",
+  "lastUpdated": "2026-08-10T14:57:25.467Z",
   "note": "baseline verified manually",
   "lastRun": {
-   "changed": 3,
+   "changed": 1,
    "failedGroups": 0
   }
  },
@@ -682,12 +682,12 @@
   {
    "soc": "MICCAI",
    "group": "INTL",
-   "start": "2027-09-27",
+   "start": "2027-09-26",
    "end": "2027-10-01",
    "status": "confirmed",
    "url": "https://miccai.org/index.php/events/upcoming-conferences/",
    "name": {
-    "ko": "30차 MICCAI 2027",
+    "ko": "30th MICCAI 2027",
     "en": "30th MICCAI 2027"
    },
    "city": {
@@ -699,12 +699,12 @@
     "en": "New Zealand"
    },
    "venue": {
-    "ko": "TBD",
-    "en": "TBD"
+    "ko": "New Zealand International Convention Centre (NZICC)",
+    "en": "New Zealand International Convention Centre (NZICC)"
    },
    "note": {
-    "ko": "시작일 수정됨 (9월 26일에서 9월 27일)",
-    "en": "Start date corrected (from Sept 26 to Sept 27)"
+    "ko": "장소 업데이트됨",
+    "en": "Venue confirmed"
    }
   },
   {
