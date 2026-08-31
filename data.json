@@ -1,9 +1,9 @@
 {
  "meta": {
-  "lastUpdated": "2026-08-24T14:40:02.833Z",
+  "lastUpdated": "2026-08-31T19:50:45.395Z",
   "note": "baseline verified manually",
   "lastRun": {
-   "changed": 0,
+   "changed": 2,
    "failedGroups": 0
   }
  },
@@ -202,27 +202,27 @@
    "group": "NA",
    "start": "2027-09-18",
    "end": "2027-09-22",
-   "status": "date-only",
-   "url": "https://www.astro.org/meetings-and-education",
+   "status": "confirmed",
+   "url": "https://www.astro.org/meetings-and-education/micro-sites/2027/am-exhibitors/general-information",
    "name": {
-    "ko": "제69차 연례학술대회 (ASTRO 2027)",
+    "ko": "69차 연례 회의 (ASTRO 2027)",
     "en": "69th Annual Meeting (ASTRO 2027)"
    },
    "city": {
-    "ko": "미정",
-    "en": "TBD"
+    "ko": "시카고",
+    "en": "Chicago"
    },
    "country": {
     "ko": "미국",
     "en": "USA"
    },
    "venue": {
-    "ko": "미정",
-    "en": "TBD"
+    "ko": "McCormick Place West",
+    "en": "McCormick Place West"
    },
    "note": {
-    "ko": "날짜만 확정, 개최 도시 추후 발표.",
-    "en": "Dates set; host city to be announced."
+    "ko": "",
+    "en": ""
    }
   },
   {
@@ -416,25 +416,29 @@
   {
    "soc": "AAMD",
    "group": "NA",
-   "start": "2027-06-13",
+   "start": "2027-06-12",
    "end": "2027-06-16",
    "status": "confirmed",
-   "url": "https://www.medicaldosimetry.org/meetings",
+   "url": "https://www.medicaldosimetry.org/meetings/aamd-51st-annual-meeting/",
    "name": {
-    "ko": "제52회 연례학술대회 (AAMD 2027)",
+    "ko": "52차 연례 회의 (AAMD 2027)",
     "en": "52nd Annual Meeting (AAMD 2027)"
    },
    "city": {
-    "ko": "샌안토니오",
+    "ko": "산안토니오",
     "en": "San Antonio"
    },
    "country": {
-    "ko": "미국 (텍사스)",
-    "en": "USA (Texas)"
+    "ko": "미국",
+    "en": "USA"
    },
    "venue": {
-    "ko": "미정",
-    "en": "TBD"
+    "ko": "San Antonio Marriott Rivercenter",
+    "en": "San Antonio Marriott Rivercenter"
+   },
+   "note": {
+    "ko": "",
+    "en": ""
    }
   },
   {
