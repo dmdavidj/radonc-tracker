@@ -1,9 +1,9 @@
 {
  "meta": {
-  "lastUpdated": "2026-08-31T19:50:45.395Z",
+  "lastUpdated": "2026-09-07T18:36:37.849Z",
   "note": "baseline verified manually",
   "lastRun": {
-   "changed": 2,
+   "changed": 3,
    "failedGroups": 0
   }
  },
@@ -416,29 +416,29 @@
   {
    "soc": "AAMD",
    "group": "NA",
-   "start": "2027-06-12",
+   "start": "2027-06-13",
    "end": "2027-06-16",
    "status": "confirmed",
-   "url": "https://www.medicaldosimetry.org/meetings/aamd-51st-annual-meeting/",
+   "url": "https://www.medicaldosimetry.org/meetings/call-for-abstracts/",
    "name": {
-    "ko": "52차 연례 회의 (AAMD 2027)",
+    "ko": "제52차 연례회의(AAMD 2027)",
     "en": "52nd Annual Meeting (AAMD 2027)"
    },
    "city": {
-    "ko": "산안토니오",
+    "ko": "샌안토니오",
     "en": "San Antonio"
    },
    "country": {
     "ko": "미국",
-    "en": "USA"
+    "en": "United States"
    },
    "venue": {
-    "ko": "San Antonio Marriott Rivercenter",
+    "ko": "샌안토니오 매리어트 리버센터",
     "en": "San Antonio Marriott Rivercenter"
    },
    "note": {
-    "ko": "",
-    "en": ""
+    "ko": "일정 변경됨 (이전: 6월 12-16)",
+    "en": "Date changed from June 12-16"
    }
   },
   {
@@ -689,9 +689,9 @@
    "start": "2027-09-26",
    "end": "2027-10-01",
    "status": "confirmed",
-   "url": "https://miccai.org/index.php/events/upcoming-conferences/",
+   "url": "https://miccai.org/upcoming-conferences/",
    "name": {
-    "ko": "30th MICCAI 2027",
+    "ko": "30차 MICCAI 2027",
     "en": "30th MICCAI 2027"
    },
    "city": {
@@ -703,12 +703,12 @@
     "en": "New Zealand"
    },
    "venue": {
-    "ko": "New Zealand International Convention Centre (NZICC)",
+    "ko": "뉴질랜드 국제컨벤션센터(NZICC)",
     "en": "New Zealand International Convention Centre (NZICC)"
    },
    "note": {
-    "ko": "장소 업데이트됨",
-    "en": "Venue confirmed"
+    "ko": "이전 데이터의 시작일 수정됨 (2027-09-27 → 2027-09-26)",
+    "en": "Start date corrected from previously listed 2027-09-27"
    }
   },
   {
@@ -794,14 +794,14 @@
   {
    "soc": "ICCR",
    "name": {
-    "ko": "21차 국제 방사선치료 컴퓨터 활용 학술대회",
+    "ko": "21st ICCR (컴퓨터 방사선치료 국제회의)",
     "en": "21st International Conference on the Use of Computers in Radiation Therapy"
    },
    "start": "2027-07-05",
    "end": "2027-07-08",
    "status": "confirmed",
    "city": {
-    "ko": "퀘벡시",
+    "ko": "퀘벡시티",
     "en": "Quebec City"
    },
    "country": {
@@ -809,12 +809,12 @@
     "en": "Canada"
    },
    "venue": {
-    "ko": "퀘벡시 컨벤션 센터",
+    "ko": "퀘벡시티 컨벤션 센터",
     "en": "Quebec City Convention Centre"
    },
    "note": {
-    "ko": "라발 대학 과학기술 대학원 주관",
-    "en": "Organized by Université Laval's Faculty of Science and Engineering"
+    "ko": "",
+    "en": ""
    },
    "url": "https://www.convention.qc.ca/en/event-calendar/computers-in-radiation-conference-2027/",
    "group": "INTL"
