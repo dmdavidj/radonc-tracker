@@ -1,9 +1,9 @@
 {
  "meta": {
-  "lastUpdated": "2026-09-07T18:36:37.849Z",
+  "lastUpdated": "2026-09-14T19:02:19.446Z",
   "note": "baseline verified manually",
   "lastRun": {
-   "changed": 3,
+   "changed": 2,
    "failedGroups": 0
   }
  },
@@ -686,10 +686,10 @@
   {
    "soc": "MICCAI",
    "group": "INTL",
-   "start": "2027-09-26",
+   "start": "2027-09-27",
    "end": "2027-10-01",
    "status": "confirmed",
-   "url": "https://miccai.org/upcoming-conferences/",
+   "url": "https://miccai.org/2026/02/18/announcing-miccai-2027-and-miccai-2028-locations/",
    "name": {
     "ko": "30차 MICCAI 2027",
     "en": "30th MICCAI 2027"
@@ -707,8 +707,8 @@
     "en": "New Zealand International Convention Centre (NZICC)"
    },
    "note": {
-    "ko": "이전 데이터의 시작일 수정됨 (2027-09-27 → 2027-09-26)",
-    "en": "Start date corrected from previously listed 2027-09-27"
+    "ko": "날짜 정정: 9월26일→27일",
+    "en": "Date corrected: Sept 26→27"
    }
   },
   {
@@ -873,6 +873,34 @@
     "en": "PTCOG 지역회의"
    },
    "url": "https://ptcog-ao2026.com/",
+   "group": "INTL"
+  },
+  {
+   "soc": "PTCOG-AO",
+   "name": {
+    "ko": "제7회 PTCOG-AO 2027",
+    "en": "7th PTCOG Asia-Oceania 2027"
+   },
+   "start": "2027-06-07",
+   "end": "2027-06-12",
+   "status": "confirmed",
+   "city": {
+    "ko": "방콕",
+    "en": "Bangkok"
+   },
+   "country": {
+    "ko": "태국",
+    "en": "Thailand"
+   },
+   "venue": {
+    "ko": "TBD",
+    "en": "TBD"
+   },
+   "note": {
+    "ko": "PTCOG 65 연차회의의 일부",
+    "en": "Part of 65th Annual PTCOG Conference"
+   },
+   "url": "https://ptcog65.org/",
    "group": "INTL"
   }
  ]
