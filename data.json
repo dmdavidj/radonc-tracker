@@ -1,9 +1,9 @@
 {
  "meta": {
-  "lastUpdated": "2026-09-14T19:02:19.446Z",
+  "lastUpdated": "2026-09-21T19:04:07.855Z",
   "note": "baseline verified manually",
   "lastRun": {
-   "changed": 2,
+   "changed": 3,
    "failedGroups": 0
   }
  },
@@ -416,29 +416,29 @@
   {
    "soc": "AAMD",
    "group": "NA",
-   "start": "2027-06-13",
+   "start": "2027-06-12",
    "end": "2027-06-16",
    "status": "confirmed",
-   "url": "https://www.medicaldosimetry.org/meetings/call-for-abstracts/",
+   "url": "https://www.medicaldosimetry.org/meetings/aamd-51st-annual-meeting/",
    "name": {
-    "ko": "제52차 연례회의(AAMD 2027)",
+    "ko": "52차 정기 회의 (AAMD 2027)",
     "en": "52nd Annual Meeting (AAMD 2027)"
    },
    "city": {
-    "ko": "샌안토니오",
+    "ko": "산 안토니오",
     "en": "San Antonio"
    },
    "country": {
     "ko": "미국",
-    "en": "United States"
+    "en": "USA"
    },
    "venue": {
-    "ko": "샌안토니오 매리어트 리버센터",
+    "ko": "산 안토니오 메리엇 리버센터",
     "en": "San Antonio Marriott Rivercenter"
    },
    "note": {
-    "ko": "일정 변경됨 (이전: 6월 12-16)",
-    "en": "Date changed from June 12-16"
+    "ko": "시작 날짜 변경됨 (6월 13일에서 6월 12일)",
+    "en": "Start date changed from June 13 to June 12"
    }
   },
   {
@@ -686,12 +686,12 @@
   {
    "soc": "MICCAI",
    "group": "INTL",
-   "start": "2027-09-27",
+   "start": "2027-09-26",
    "end": "2027-10-01",
    "status": "confirmed",
-   "url": "https://miccai.org/2026/02/18/announcing-miccai-2027-and-miccai-2028-locations/",
+   "url": "https://miccai.org/upcoming-conferences/",
    "name": {
-    "ko": "30차 MICCAI 2027",
+    "ko": "30th MICCAI 2027",
     "en": "30th MICCAI 2027"
    },
    "city": {
@@ -703,12 +703,12 @@
     "en": "New Zealand"
    },
    "venue": {
-    "ko": "뉴질랜드 국제컨벤션센터(NZICC)",
+    "ko": "뉴질랜드 국제컨벤션센터 (NZICC)",
     "en": "New Zealand International Convention Centre (NZICC)"
    },
    "note": {
-    "ko": "날짜 정정: 9월26일→27일",
-    "en": "Date corrected: Sept 26→27"
+    "ko": "시작일 변경: 2027-09-27에서 2027-09-26으로",
+    "en": "Start date updated from Sept 27 to Sept 26"
    }
   },
   {
@@ -901,6 +901,34 @@
     "en": "Part of 65th Annual PTCOG Conference"
    },
    "url": "https://ptcog65.org/",
+   "group": "INTL"
+  },
+  {
+   "soc": "AOCMP",
+   "name": {
+    "ko": "제25차 아시아오세아니아 의료물리학 회의",
+    "en": "25th Asia-Oceania Congress of Medical Physics"
+   },
+   "start": "2025-09-29",
+   "end": "2025-10-04",
+   "status": "confirmed",
+   "city": {
+    "ko": "애들레이드",
+    "en": "Adelaide"
+   },
+   "country": {
+    "ko": "호주",
+    "en": "Australia"
+   },
+   "venue": {
+    "ko": "TBD",
+    "en": "TBD"
+   },
+   "note": {
+    "ko": "2026년 회의 이전의 2025년 회의",
+    "en": "AOCMP 2025 before 2026 meeting"
+   },
+   "url": "https://afomp.org/aocmp-conferences/",
    "group": "INTL"
   }
  ]
