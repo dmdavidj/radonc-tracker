@@ -1,9 +1,9 @@
 {
  "meta": {
-  "lastUpdated": "2026-09-21T19:04:07.855Z",
+  "lastUpdated": "2026-09-28T20:23:30.477Z",
   "note": "baseline verified manually",
   "lastRun": {
-   "changed": 3,
+   "changed": 1,
    "failedGroups": 0
   }
  },
@@ -468,9 +468,9 @@
    "start": "2027-05-21",
    "end": "2027-05-25",
    "status": "confirmed",
-   "url": "https://www.estro.org/Congresses",
+   "url": "https://www.estro.org/congresses",
    "name": {
-    "ko": "ESTRO 2027 연례총회",
+    "ko": "ESTRO 2027 연례 총회",
     "en": "ESTRO 2027 Annual Congress"
    },
    "city": {
@@ -482,8 +482,12 @@
     "en": "Italy"
    },
    "venue": {
-    "ko": "미정(도시 확정)",
-    "en": "TBD (city confirmed)"
+    "ko": "Allianz MiCo",
+    "en": "Allianz MiCo"
+   },
+   "note": {
+    "ko": "기존 venue TBD에서 업데이트됨",
+    "en": "Venue updated from TBD"
    }
   },
   {
