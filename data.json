@@ -1,9 +1,9 @@
 {
  "meta": {
-  "lastUpdated": "2026-09-28T20:23:30.477Z",
+  "lastUpdated": "2026-10-05T21:27:06.458Z",
   "note": "baseline verified manually",
   "lastRun": {
-   "changed": 1,
+   "changed": 5,
    "failedGroups": 0
   }
  },
@@ -829,26 +829,26 @@
     "ko": "제40회 학술대회",
     "en": "40th Annual Meeting (JASTRO 2027)"
    },
-   "start": "2027-05-26",
-   "end": "2027-05-28",
+   "start": "2027-10-28",
+   "end": "2027-10-30",
    "status": "confirmed",
    "city": {
-    "ko": "오사카",
-    "en": "Osaka"
+    "ko": "교토",
+    "en": "Kyoto"
    },
    "country": {
     "ko": "일본",
     "en": "Japan"
    },
    "venue": {
-    "ko": "오사카 국제회의장",
-    "en": "Osaka International Conference Center"
+    "ko": "국립교토국제회의장",
+    "en": "National Kyoto International Conference Hall"
    },
    "note": {
-    "ko": "",
-    "en": ""
+    "ko": "날짜 변경됨 (이전: 5월 26-28)",
+    "en": "Date changed from May 26-28"
    },
-   "url": "https://www.jastro.or.jp",
+   "url": "https://www.jastro.or.jp/medicalpersonnel/event/congress/post.html",
    "group": "JP"
   },
   {
@@ -934,6 +934,119 @@
    },
    "url": "https://afomp.org/aocmp-conferences/",
    "group": "INTL"
+  },
+  {
+   "soc": "ESTRO",
+   "name": {
+    "ko": "ESTRO Meets Asia 2026",
+    "en": "ESTRO Meets Asia 2026"
+   },
+   "start": "2026-08-28",
+   "end": "2026-08-30",
+   "status": "confirmed",
+   "city": {
+    "ko": "싱가포르",
+    "en": "Singapore"
+   },
+   "country": {
+    "ko": "싱가포르",
+    "en": "Singapore"
+   },
+   "venue": {
+    "ko": "미정",
+    "en": "TBD"
+   },
+   "note": {
+    "ko": "신규 행사",
+    "en": "New ESTRO regional event"
+   },
+   "url": "https://www.estro.org/congresses",
+   "group": "EU"
+  },
+  {
+   "soc": "JASTRO",
+   "name": {
+    "ko": "제41회 학술대회",
+    "en": "41st Annual Meeting (JASTRO 2028)"
+   },
+   "start": "2028-11-02",
+   "end": "2028-11-04",
+   "status": "confirmed",
+   "city": {
+    "ko": "오사카",
+    "en": "Osaka"
+   },
+   "country": {
+    "ko": "일본",
+    "en": "Japan"
+   },
+   "venue": {
+    "ko": "오사카국제회의장",
+    "en": "Osaka International Conference Center"
+   },
+   "note": {
+    "ko": "신규 항목",
+    "en": "New future meeting"
+   },
+   "url": "https://www.jastro.or.jp/medicalpersonnel/event/congress/post.html",
+   "group": "JP"
+  },
+  {
+   "soc": "PTCOG-AO",
+   "name": {
+    "ko": "5차 PTCOG-AO 연례회의",
+    "en": "5th Annual Conference of PTCOG-AO"
+   },
+   "start": "2025-11-07",
+   "end": "2025-11-09",
+   "status": "confirmed",
+   "city": {
+    "ko": "홍콩",
+    "en": "Hong Kong"
+   },
+   "country": {
+    "ko": "중국",
+    "en": "China"
+   },
+   "venue": {
+    "ko": "홍콩컨벤션전시센터 및 HKSH 양성자치료센터",
+    "en": "Hong Kong Convention Exhibition Centre and HKSH Proton Therapy Centre"
+   },
+   "note": {
+    "ko": "",
+    "en": ""
+   },
+   "url": "https://www.ptcog-ao2025.hk/",
+   "group": "INTL"
+  },
+  {
+   "soc": "AOCMP",
+   "name": {
+    "ko": "27차 AOCMP",
+    "en": "27th Asia-Oceania Congress of Medical Physics"
+   },
+   "start": null,
+   "end": null,
+   "status": "provisional",
+   "city": {
+    "ko": "TBD",
+    "en": "TBD"
+   },
+   "country": {
+    "ko": "TBD",
+    "en": "TBD"
+   },
+   "venue": {
+    "ko": "TBD",
+    "en": "TBD"
+   },
+   "note": {
+    "ko": "개최지 선정 중",
+    "en": "Host location selection in progress"
+   },
+   "url": "https://afomp.org/aocmp-conferences/",
+   "group": "INTL",
+   "yearHint": 2026
   }
  ]
 }
