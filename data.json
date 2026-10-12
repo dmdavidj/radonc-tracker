@@ -1,9 +1,9 @@
 {
  "meta": {
-  "lastUpdated": "2026-10-05T21:27:06.458Z",
+  "lastUpdated": "2026-10-12T21:59:08.683Z",
   "note": "baseline verified manually",
   "lastRun": {
-   "changed": 5,
+   "changed": 4,
    "failedGroups": 0
   }
  },
@@ -349,9 +349,9 @@
    "start": "2029-06-24",
    "end": "2029-06-27",
    "status": "confirmed",
-   "url": "https://www.aapm.org/meetings",
+   "url": "https://www.aapm.org/meetings/",
    "name": {
-    "ko": "제71회 연례학술대회 (AAPM 2029)",
+    "ko": "71차 연례 학술대회 (AAPM 2029)",
     "en": "71st Annual Meeting (AAPM 2029)"
    },
    "city": {
@@ -360,11 +360,15 @@
    },
    "country": {
     "ko": "미국",
-    "en": "USA"
+    "en": "United States"
    },
    "venue": {
-    "ko": "미정",
-    "en": "TBD"
+    "ko": "Seattle Convention Center, Summit",
+    "en": "Seattle Convention Center, Summit"
+   },
+   "note": {
+    "ko": "신규 - 원래 데이터에 누락",
+    "en": "Newly added - missing from provided data"
    }
   },
   {
@@ -1047,6 +1051,90 @@
    "url": "https://afomp.org/aocmp-conferences/",
    "group": "INTL",
    "yearHint": 2026
+  },
+  {
+   "soc": "ASTRO",
+   "name": {
+    "ko": "72차 연례 학술대회 (ASTRO 2030)",
+    "en": "72nd Annual Meeting (ASTRO 2030)"
+   },
+   "start": "2030-09-21",
+   "end": "2030-09-25",
+   "status": "date-only",
+   "city": {
+    "ko": "미정",
+    "en": "TBD"
+   },
+   "country": {
+    "ko": "미국",
+    "en": "United States"
+   },
+   "venue": {
+    "ko": "미정",
+    "en": "TBD"
+   },
+   "note": {
+    "ko": "신규",
+    "en": "Newly announced"
+   },
+   "url": "https://www.astro.org/meetings-and-education/micro-sites/2027/am-exhibitors/general-information/future-annual-meeting",
+   "group": "NA"
+  },
+  {
+   "soc": "AAPM",
+   "name": {
+    "ko": "72차 연례 학술대회 (AAPM 2030)",
+    "en": "72nd Annual Meeting (AAPM 2030)"
+   },
+   "start": "2030-07-21",
+   "end": "2030-07-25",
+   "status": "date-only",
+   "city": {
+    "ko": "로스앤젤레스",
+    "en": "Los Angeles"
+   },
+   "country": {
+    "ko": "미국",
+    "en": "United States"
+   },
+   "venue": {
+    "ko": "미정",
+    "en": "TBD"
+   },
+   "note": {
+    "ko": "신규",
+    "en": "Newly announced"
+   },
+   "url": "https://www.aapm.org/meetings/",
+   "group": "NA"
+  },
+  {
+   "soc": "JASTRO",
+   "name": {
+    "ko": "제42회 일본방사선종양학회 학술대회",
+    "en": "42nd Annual Meeting (JASTRO 2029)"
+   },
+   "start": "2029-11-22",
+   "end": "2029-11-24",
+   "status": "confirmed",
+   "city": {
+    "ko": "군마",
+    "en": "Gunma"
+   },
+   "country": {
+    "ko": "일본",
+    "en": "Japan"
+   },
+   "venue": {
+    "ko": "Gメッセ群馬",
+    "en": "Gメッセ群馬"
+   },
+   "note": {
+    "ko": "",
+    "en": ""
+   },
+   "url": "https://www.jastro.or.jp/",
+   "group": "JP"
   }
  ]
 }
