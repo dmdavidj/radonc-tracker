@@ -1,9 +1,9 @@
 {
  "meta": {
-  "lastUpdated": "2026-10-12T21:59:08.683Z",
+  "lastUpdated": "2026-10-19T19:39:42.451Z",
   "note": "baseline verified manually",
   "lastRun": {
-   "changed": 4,
+   "changed": 1,
    "failedGroups": 0
   }
  },
@@ -1135,6 +1135,35 @@
    },
    "url": "https://www.jastro.or.jp/",
    "group": "JP"
+  },
+  {
+   "soc": "PTCOG",
+   "name": {
+    "ko": "PTCOG-AO 2028 (7th Annual Conference Asia-Oceania)",
+    "en": "PTCOG-AO 2028 (7th Annual Conference Asia-Oceania)"
+   },
+   "start": null,
+   "end": null,
+   "status": "provisional",
+   "city": {
+    "ko": "합헤이",
+    "en": "Hefei"
+   },
+   "country": {
+    "ko": "중국",
+    "en": "China"
+   },
+   "venue": {
+    "ko": "Hefei Ion Medical Center",
+    "en": "Hefei Ion Medical Center"
+   },
+   "note": {
+    "ko": "2026년 9월 PTCOG-AO에서 개최지 선정",
+    "en": "Host selected at PTCOG-AO 2026 (September 2026)"
+   },
+   "url": "https://ptcog.online/ptcog-ao-2026-empowering-access-to-particle-therapy-through-research-education-and-collaboration/",
+   "group": "INTL",
+   "yearHint": 2026
   }
  ]
 }
