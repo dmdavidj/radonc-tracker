@@ -1,9 +1,9 @@
 {
  "meta": {
-  "lastUpdated": "2026-10-19T19:39:42.451Z",
+  "lastUpdated": "2026-10-26T19:45:26.892Z",
   "note": "baseline verified manually",
   "lastRun": {
-   "changed": 1,
+   "changed": 3,
    "failedGroups": 0
   }
  },
@@ -886,7 +886,7 @@
   {
    "soc": "PTCOG-AO",
    "name": {
-    "ko": "제7회 PTCOG-AO 2027",
+    "ko": "PTCOG 아시아-오세아니아 2027",
     "en": "7th PTCOG Asia-Oceania 2027"
    },
    "start": "2027-06-07",
@@ -905,8 +905,8 @@
     "en": "TBD"
    },
    "note": {
-    "ko": "PTCOG 65 연차회의의 일부",
-    "en": "Part of 65th Annual PTCOG Conference"
+    "ko": "PTCOG 65 병행",
+    "en": "Held concurrently with PTCOG 65"
    },
    "url": "https://ptcog65.org/",
    "group": "INTL"
@@ -1164,6 +1164,63 @@
    "url": "https://ptcog.online/ptcog-ao-2026-empowering-access-to-particle-therapy-through-research-education-and-collaboration/",
    "group": "INTL",
    "yearHint": 2026
+  },
+  {
+   "soc": "PTCOG-AO",
+   "name": {
+    "ko": "PTCOG 아시아-오세아니아 2028",
+    "en": "8th PTCOG Asia-Oceania 2028"
+   },
+   "start": null,
+   "end": null,
+   "status": "provisional",
+   "city": {
+    "ko": "허페이",
+    "en": "Hefei"
+   },
+   "country": {
+    "ko": "중국",
+    "en": "China"
+   },
+   "venue": {
+    "ko": "허페이 이온 의료 센터",
+    "en": "Hefei Ion Medical Center"
+   },
+   "note": {
+    "ko": "새로 발표됨",
+    "en": "Newly announced"
+   },
+   "url": "",
+   "group": "INTL",
+   "yearHint": 2026
+  },
+  {
+   "soc": "MICCAI",
+   "name": {
+    "ko": "32nd MICCAI 2029",
+    "en": "32nd MICCAI 2029"
+   },
+   "start": "2029-09-01",
+   "end": null,
+   "status": "provisional",
+   "city": {
+    "ko": "아부다비",
+    "en": "Abu Dhabi"
+   },
+   "country": {
+    "ko": "아랍에미리트",
+    "en": "United Arab Emirates"
+   },
+   "venue": {
+    "ko": "TBD",
+    "en": "TBD"
+   },
+   "note": {
+    "ko": "재확정: Abu Dhabi로 돌아옴",
+    "en": "Confirmed: MICCAI returns to Abu Dhabi"
+   },
+   "url": "https://miccai.org/upcoming-conferences/",
+   "group": "INTL"
   }
  ]
 }
