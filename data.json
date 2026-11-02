@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastUpdated": "2026-10-26T19:45:26.892Z",
+  "lastUpdated": "2026-11-02T22:36:17.491Z",
   "note": "baseline verified manually",
   "lastRun": {
    "changed": 3,
@@ -200,12 +200,12 @@
   {
    "soc": "ASTRO",
    "group": "NA",
-   "start": "2027-09-18",
+   "start": "2027-09-19",
    "end": "2027-09-22",
    "status": "confirmed",
-   "url": "https://www.astro.org/meetings-and-education/micro-sites/2027/am-exhibitors/general-information",
+   "url": "https://www.astro.org/meetings-and-education/micro-sites/2027/am-exhibitors/general-information/future-annual-meeting",
    "name": {
-    "ko": "69차 연례 회의 (ASTRO 2027)",
+    "ko": "69차 연례 학술대회 (ASTRO 2027)",
     "en": "69th Annual Meeting (ASTRO 2027)"
    },
    "city": {
@@ -221,8 +221,8 @@
     "en": "McCormick Place West"
    },
    "note": {
-    "ko": "",
-    "en": ""
+    "ko": "날짜 변경됨",
+    "en": "Dates changed from Sep 18-22"
    }
   },
   {
@@ -325,9 +325,9 @@
    "start": "2028-07-30",
    "end": "2028-08-02",
    "status": "confirmed",
-   "url": "https://www.aapm.org/meetings",
+   "url": "https://www.aapm.org/meetings/",
    "name": {
-    "ko": "제70회 연례학술대회 (AAPM 2028)",
+    "ko": "70차 연례 학술대회 (AAPM 2028)",
     "en": "70th Annual Meeting (AAPM 2028)"
    },
    "city": {
@@ -339,8 +339,12 @@
     "en": "USA"
    },
    "venue": {
-    "ko": "미정",
-    "en": "TBD"
+    "ko": "Walter E. Washington Convention Center",
+    "en": "Walter E. Washington Convention Center"
+   },
+   "note": {
+    "ko": "장소 확인됨",
+    "en": "Venue confirmed"
    }
   },
   {
@@ -886,7 +890,7 @@
   {
    "soc": "PTCOG-AO",
    "name": {
-    "ko": "PTCOG 아시아-오세아니아 2027",
+    "ko": "7th PTCOG Asia-Oceania 2027",
     "en": "7th PTCOG Asia-Oceania 2027"
    },
    "start": "2027-06-07",
@@ -901,11 +905,11 @@
     "en": "Thailand"
    },
    "venue": {
-    "ko": "TBD",
-    "en": "TBD"
+    "ko": "Thai-Japan Friendship Princess Maha Chakri Sirindhorn Proton Center, King Chulalongkorn Memorial Hospital",
+    "en": "Her Royal Highness Princess Maha Chakri Sirindhorn Proton Center, King Chulalongkorn Memorial Hospital"
    },
    "note": {
-    "ko": "PTCOG 65 병행",
+    "ko": "PTCOG 65와 동시 개최",
     "en": "Held concurrently with PTCOG 65"
    },
    "url": "https://ptcog65.org/",
