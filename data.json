@@ -1,9 +1,9 @@
 {
  "meta": {
-  "lastUpdated": "2026-11-02T22:36:17.491Z",
+  "lastUpdated": "2026-11-09T23:16:56.330Z",
   "note": "baseline verified manually",
   "lastRun": {
-   "changed": 3,
+   "changed": 2,
    "failedGroups": 0
   }
  },
@@ -698,12 +698,12 @@
   {
    "soc": "MICCAI",
    "group": "INTL",
-   "start": "2027-09-26",
+   "start": "2027-09-27",
    "end": "2027-10-01",
    "status": "confirmed",
    "url": "https://miccai.org/upcoming-conferences/",
    "name": {
-    "ko": "30th MICCAI 2027",
+    "ko": "30차 MICCAI 2027",
     "en": "30th MICCAI 2027"
    },
    "city": {
@@ -715,12 +715,12 @@
     "en": "New Zealand"
    },
    "venue": {
-    "ko": "뉴질랜드 국제컨벤션센터 (NZICC)",
+    "ko": "뉴질랜드 국제컨벤션센터",
     "en": "New Zealand International Convention Centre (NZICC)"
    },
    "note": {
-    "ko": "시작일 변경: 2027-09-27에서 2027-09-26으로",
-    "en": "Start date updated from Sept 27 to Sept 26"
+    "ko": "시작일이 09-26에서 09-27로 변경됨",
+    "en": "Start date corrected from Sept 26 to Sept 27"
    }
   },
   {
@@ -1201,12 +1201,12 @@
   {
    "soc": "MICCAI",
    "name": {
-    "ko": "32nd MICCAI 2029",
+    "ko": "32차 MICCAI 2029",
     "en": "32nd MICCAI 2029"
    },
-   "start": "2029-09-01",
-   "end": null,
-   "status": "provisional",
+   "start": "2029-10-16",
+   "end": "2029-10-20",
+   "status": "confirmed",
    "city": {
     "ko": "아부다비",
     "en": "Abu Dhabi"
@@ -1220,8 +1220,8 @@
     "en": "TBD"
    },
    "note": {
-    "ko": "재확정: Abu Dhabi로 돌아옴",
-    "en": "Confirmed: MICCAI returns to Abu Dhabi"
+    "ko": "날짜 변경: 09-01에서 10-16으로 변경됨",
+    "en": "Date changed from Sept 1 to Oct 16-20"
    },
    "url": "https://miccai.org/upcoming-conferences/",
    "group": "INTL"
