@@ -1,9 +1,9 @@
 {
  "meta": {
-  "lastUpdated": "2026-11-09T23:16:56.330Z",
+  "lastUpdated": "2026-11-16T23:12:25.034Z",
   "note": "baseline verified manually",
   "lastRun": {
-   "changed": 2,
+   "changed": 3,
    "failedGroups": 0
   }
  },
@@ -200,12 +200,12 @@
   {
    "soc": "ASTRO",
    "group": "NA",
-   "start": "2027-09-19",
+   "start": "2027-09-18",
    "end": "2027-09-22",
    "status": "confirmed",
-   "url": "https://www.astro.org/meetings-and-education/micro-sites/2027/am-exhibitors/general-information/future-annual-meeting",
+   "url": "https://www.astro.org/",
    "name": {
-    "ko": "69차 연례 학술대회 (ASTRO 2027)",
+    "ko": "69th Annual Meeting (ASTRO 2027)",
     "en": "69th Annual Meeting (ASTRO 2027)"
    },
    "city": {
@@ -214,15 +214,15 @@
    },
    "country": {
     "ko": "미국",
-    "en": "USA"
+    "en": "United States"
    },
    "venue": {
     "ko": "McCormick Place West",
     "en": "McCormick Place West"
    },
    "note": {
-    "ko": "날짜 변경됨",
-    "en": "Dates changed from Sep 18-22"
+    "ko": "공식 자료에 따라 시작일 수정됨",
+    "en": "Start date corrected per official source"
    }
   },
   {
@@ -698,7 +698,7 @@
   {
    "soc": "MICCAI",
    "group": "INTL",
-   "start": "2027-09-27",
+   "start": "2027-09-26",
    "end": "2027-10-01",
    "status": "confirmed",
    "url": "https://miccai.org/upcoming-conferences/",
@@ -715,12 +715,12 @@
     "en": "New Zealand"
    },
    "venue": {
-    "ko": "뉴질랜드 국제컨벤션센터",
+    "ko": "뉴질랜드 국제 컨벤션 센터(NZICC)",
     "en": "New Zealand International Convention Centre (NZICC)"
    },
    "note": {
-    "ko": "시작일이 09-26에서 09-27로 변경됨",
-    "en": "Start date corrected from Sept 26 to Sept 27"
+    "ko": "개시일 수정됨: 9/27에서 9/26으로",
+    "en": "Start date corrected from 9/27 to 9/26"
    }
   },
   {
@@ -1225,6 +1225,34 @@
    },
    "url": "https://miccai.org/upcoming-conferences/",
    "group": "INTL"
+  },
+  {
+   "soc": "KARP",
+   "name": {
+    "ko": "2026년 추계학술대회 및 제50차 정기총회",
+    "en": "2026 Fall Meeting & 50th General Assembly"
+   },
+   "start": "2026-10-29",
+   "end": "2026-10-31",
+   "status": "confirmed",
+   "city": {
+    "ko": "제주",
+    "en": "Jeju"
+   },
+   "country": {
+    "ko": "대한민국",
+    "en": "South Korea"
+   },
+   "venue": {
+    "ko": "롯데호텔 제주",
+    "en": "Lotte Hotel Jeju"
+   },
+   "note": {
+    "ko": "대한방사선방어학회 공식 발표",
+    "en": "Official KARP announcement"
+   },
+   "url": "https://karp.or.kr",
+   "group": "KR"
   }
  ]
 }
