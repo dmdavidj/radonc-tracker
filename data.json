@@ -1,9 +1,9 @@
 {
  "meta": {
-  "lastUpdated": "2026-11-16T23:12:25.034Z",
+  "lastUpdated": "2026-11-24T01:29:25.997Z",
   "note": "baseline verified manually",
   "lastRun": {
-   "changed": 3,
+   "changed": 1,
    "failedGroups": 0
   }
  },
@@ -1253,6 +1253,34 @@
    },
    "url": "https://karp.or.kr",
    "group": "KR"
+  },
+  {
+   "soc": "MICCAI",
+   "name": {
+    "ko": "33rd MICCAI 2030",
+    "en": "33rd MICCAI 2030"
+   },
+   "start": "2030-09-08",
+   "end": "2030-09-12",
+   "status": "confirmed",
+   "city": {
+    "ko": "로테르담",
+    "en": "Rotterdam"
+   },
+   "country": {
+    "ko": "네덜란드",
+    "en": "Netherlands"
+   },
+   "venue": {
+    "ko": "TBD",
+    "en": "TBD"
+   },
+   "note": {
+    "ko": "32nd MICCAI 2029 Abu Dhabi 이후",
+    "en": "Following MICCAI 2029 in Abu Dhabi"
+   },
+   "url": "https://miccai.org/upcoming-conferences/",
+   "group": "INTL"
   }
  ]
 }
